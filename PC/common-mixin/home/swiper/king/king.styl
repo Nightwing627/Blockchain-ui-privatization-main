@@ -1,0 +1,175 @@
+.king-swiper-base {
+  height: 480px;
+  background: url(https://saas-oss.oss-cn-hongkong.aliyuncs.com/upload/20200218155653467.png) no-repeat center center;
+  // background-position: right bottom !important;
+  // background-repeat: no-repeat !important;
+  .king-box {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    .king-otc-content-sm {
+      transform: scale(.93);
+      opacity: .1;
+    }
+    .king-otc-content {
+      transition: all .3s ease;
+      position: absolute;
+      top: 120px;;
+      .king-otc-text1 {
+        font-size: 40px;
+        line-height: 60px;
+      }
+      .king-otc-text2 {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      .king-otc-options {
+        margin-top: 90px;
+      }
+      .king-otc-coin {
+        background: #fff;
+        height: 60px;
+        width: 80px;
+        float: left
+        line-height: 60px;
+        text-align: center;
+        color: #1F3F59;
+        font-size: 16px;
+      }
+      .king-otc-inp {
+        background: #fff;
+        height: 60px;
+        width: 200px;
+        float: left;
+        input {
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          font-size: 16px;
+        }
+      }
+      .king-otc-btn {
+        background: #449FFF;
+        border-radius: 0 2px 2px 0;
+        height: 60px;
+        float: left;
+        line-height: 60px;
+        text-align: center;
+        width: 160px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+    .king-img-content {
+      position: absolute;
+      transition: all .3s ease;
+      right: 0;
+      z-index 1;
+      bottom: 60px;
+      color: red;
+      .bigPage-box {
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        .bigPage-box-even {
+          width: 20px;
+          height: 2px;
+          background: #fff;
+          opacity: 0.25;
+          float: left;
+          margin-right: 10px;
+          cursor: pointer;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+         .bigPage-box-active {
+           opacity: 0.6!important;
+         }
+      }
+      .side-box {
+        position: absolute;
+        left: -80px;
+        bottom: 20px;
+      }
+      .king-type-big {
+        width: 1200px;
+        overflow: hidden
+      }
+      .king-imgs-big {
+        transition: all .3s ease;
+      }
+      .king-type-small {
+        width: 285px;
+        overflow: hidden
+      }
+      .king-imgs-small {
+        transition: all .3s ease;
+      }
+      .king-imgs-even {
+        width: 285px;
+        height: 150px;
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+      .king-imgs {
+        // float: left
+        overflow: hidden;
+        height: 150px;
+      }
+    }
+    .king-jt-l {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #6A7A97;
+      border-radius: 50%;
+      cursor: pointer;
+      line-height: 40px;
+      box-sizing: border-box;
+      .king-jt {
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #6A7A97;
+        border-right: 2px solid #6A7A97;
+        transform: rotate(220deg);
+        display: inline-block;
+        margin-left: 16px;
+      }
+    }
+    .king-jt-r, .king-jt-l {
+      &:hover {
+        border: 1px solid #D8E1F0;
+        .king-jt {
+          border-top: 2px solid #D8E1F0;
+          border-right: 2px solid #D8E1F0;
+        }
+      }
+    }
+    .king-jt-r {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #6A7A97;
+      border-radius: 50%;
+      line-height: 40px;
+      cursor: pointer;
+      box-sizing: border-box;
+      .king-jt {
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #6A7A97;
+        border-right: 2px solid #6A7A97;
+        transform: rotate(45deg);
+        display: inline-block;
+        margin-left: 12px;
+      }
+    }
+  }
+  
+}

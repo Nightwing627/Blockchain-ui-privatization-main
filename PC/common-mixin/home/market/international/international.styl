@@ -1,0 +1,90 @@
+.international-market-container {
+  &.inter-tableContentBase {
+    margin 0 110px 0 110px
+    position relative
+
+    .common-table {
+      background none
+    }
+
+    .market-title-box {
+      border-bottom-width 1px
+      border-bottom-style solid
+      height 55px
+      line-height 53px
+      border-radius 2px 2px 0 0
+    }
+
+    .market-title {
+      text-align center
+
+      li {
+        float left
+        height 53px
+        line-height 55px
+        cursor pointer
+        user-select none
+        padding 0 25px
+
+        &.selected {
+          border-bottom-width 2px
+          border-bottom-style solid
+        }
+      }
+    }
+
+    .search {
+      position absolute
+      top 12px
+      right 0
+      height 28px
+      line-height 26px
+      width 200px
+      border-radius 2px
+
+      .icon-serach {
+        margin 0 10px
+      }
+
+      .search-input {
+        line-height 26px
+        border none
+        width 165px
+      }
+
+      input::-webkit-input-placeholder {
+        color #515A6B
+      }
+    }
+
+    .table-body td .rose-label {
+      display inline-block
+      width 70px
+      height 24px
+      text-align center
+      line-height 24px
+      padding 0
+    }
+
+    .table-body td .symbolName, .table-body td .icon-btn {
+      padding 0
+      vertical-align inherit
+      margin 0
+      display inline-block
+    }
+
+    .table-body td .symbolName {
+      width 80%
+      margin-left 10px
+    }
+
+    .fontSize14 {
+      font-size 14px
+    }
+  }
+
+  &.inter-tableContent {
+    width 1180px
+    margin 0 auto 0 auto
+  }
+}

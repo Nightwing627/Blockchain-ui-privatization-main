@@ -1,0 +1,243 @@
+.trade-box.lever-tradeForm {
+    font-size: 12px;
+    padding: 0;
+    .title-block {
+      height: 39px;
+      line-height: 39px;
+      padding: 0 30px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      .tab {
+        display: inline-block;
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        height: 38px;
+        cursor: pointer;
+        user-select: none;
+        margin-right: 44px;
+        font-size: 14px;
+        &.a-12-bd {
+          border-bottom-style: solid;
+          border-bottom-width: 2px;
+        }
+      }
+      .total-assets {
+        float: right;
+        height: 38px;
+      }
+    }
+    .trade-block {
+      width: 50%;
+      float: left;
+    }
+    .trade-form {
+      padding: 0 15px;
+      .form-block {
+        padding: 0 15px;
+      }
+      .top-mag {
+        height: 35px;
+        line-height: 35px;
+        .lov {
+          float: right;
+        }
+      }
+      .percentage {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin: -19px -5px 0  -5px;
+        .per-item {
+          display: block;
+          width: 25%;
+          border-style: solid;
+          margin: 0 5px;
+          border-width: 1px;
+          text-align: center;
+          line-height: 24px;
+          height: 22px;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+      .volume-trade {
+        height: 40px;
+        line-height: 42px;
+      }
+    }
+    .totalBalancesHide {
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    .lever-assets {
+      float: left;
+      position: relative;
+      cursor: pointer;
+      height: 40px;
+      .assets-box {
+        transition: all .3s ease;
+        position: absolute;
+        padding: 14px;
+        left: 0;
+        cursor: pointer;
+        top: 40px;
+        box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+        transform: translateY(-15px);
+        opacity: 0;
+        width: 400px;
+        line-height: 18px;
+        z-index: 99;
+        height: 0;
+        display: none;
+        overflow: hidden;
+        .list {
+          line-height: 18px;
+          height: 18px;
+          margin-bottom: 5px;
+          p {
+            width : 45%;
+            float: left;
+            margin-left: 14px;
+            span {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      &:hover {
+        .assets-box {
+          display: block;
+          transform: translateY(0);
+          opacity: 1;
+          height: auto;
+          transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+        }
+        .sjicon {
+          transform:rotate(180deg)
+        }
+      }
+    }
+    .bc-infor {
+      float: right;
+      height: 40px;
+      .lever-line {
+        float: right;
+        .line {
+          width: 90px;
+          height: 7px;
+          margin-top: 16px;
+          margin-left: 14px;
+          float: right;
+          background: linear-gradient(90deg,#04bc8b,#eb4d5c);
+        }
+      }
+      .risk {
+        position: relative;
+        float: right;
+        margin-right: 12px;
+        cursor: pointer;
+        cursor: pointer;
+        .risk-text {
+          position: absolute;
+          box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+          transform: translateY(15px);
+          opacity: 0;
+          bottom: 39px;
+          line-height: 22px;
+          z-index: 99;
+          right: 0;
+          height: 0;
+          width: 0;
+          overflow: hidden;
+          display: none;
+          padding: 10px 24px;
+        }
+        &:hover {
+          .risk-text {
+            display: block;
+            transform: translateY(0);
+            opacity: 1;
+            width: max-content;
+            height: auto;
+            transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+          }
+        }
+      }
+      .bc-price {
+        float: right;
+        margin-right: 22px;
+      }
+    }
+    .form-info {
+      margin-bottom: 30px;
+      .info-item {
+        height: 50px;
+        padding: 10px 20px;
+        margin-bottom: 1px;
+        .radio {
+          line-height: 50px;
+          span {
+            margin-right: 36px;
+            cursor: pointer;
+          }
+        }
+        .rateIcon {
+          marigin-left: 6px;
+          cursor: pointer;
+          position: relative;
+          display: inline-block;
+          .iconMark {
+            display: none;
+            position: absolute;
+            -webkit-box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+            box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+            width: 300px;
+            bottom: 30px;
+            line-height: 22px;
+            left: -80px;
+            z-index: 3;
+            padding: 10px 24px;
+            font-size: 12px;
+            box-sizing: border-box;
+          }
+          &:hover {
+            .iconMark {
+              display: block;
+            }
+          }
+        }
+        .text1 {
+          font-size: 12px;
+          margin-top: 6px;
+          line-height: 22px;
+        }
+      }
+    }
+    .borrow {
+      line-height: 24px;
+    }
+    .inline-input {
+      padding: 0 10px;
+      .input-line-slot {
+        line-height: 26px;
+      }
+    }
+    .common-alert {
+      position: relative;
+      z-index: 99;
+    }
+    .alert-main {
+      .alertTitle {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+      .alertText {
+        line-height: 18px;
+        font-size: 12px;
+      }
+    }
+  }
+  .ts-content-text {
+    line-height: 24px;
+    height: 65px;
+  }

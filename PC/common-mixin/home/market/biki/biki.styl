@@ -1,0 +1,192 @@
+.market.biki-mater-container {
+  width: 1200px;
+  margin: 60px auto 0 auto;
+  .market-title-box {
+    width: 100%;
+    height: 56px;
+    position: relative;
+  }
+  .market-title {
+    font-size: 14px;
+    line-height: 56px;
+    li {
+      padding: 0 20px;
+      float: left;
+      cursor: pointer;
+      &.selected {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        margin-top: -2px;
+      }
+    }
+  }
+  .search {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 28px;
+    line-height: 26px;
+    width: 200px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    .icon-serach {
+      margin: 0 10px;
+    }
+    .search-input {
+      line-height: 26px;
+      border: none;
+      width: 165px;
+    }
+  }
+  .market-list-box {
+    overflow: hidden;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    box-sizing: border-box;
+    padding-top: 20px;
+  }
+  .market-list-thead {
+    user-select: none;
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    .sortable {
+      cursor: pointer
+    }
+    li {
+      height: 30px;
+      line-height: 30px;
+      text-align: right;
+      float: left
+      &:nth-child(1) { width: 5% }
+      &:nth-child(2) { width: 10% }
+      &:nth-child(3) { width: 25% }
+      &:nth-child(4) { width: 25% }
+      &:nth-child(5) { width: 25% }
+      &:nth-child(6) { width: 10% }
+    }
+    li:first-child {
+      text-align: left;
+    }
+  }
+  .market-loading {
+    height: 490px;
+    position: relative;
+  }
+  .market-page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0)
+  }
+  .market-nodata {
+    height: 300px;
+    position: relative;
+    padding: 80px 0 80px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    p {
+      margin-top: 5px;
+    }
+    .icon {
+      font-size: 36px;
+    }
+  }
+  .market-tbody-box {
+    max-height: 840px;
+    transition: all 0.5s;
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0 !important;height: 0;
+  }
+  .market-tbody-title {
+    height: 60px;
+    display: flex;
+    overflow hidden;
+    span {
+      height: 16px;
+      font-size: 14px;
+      padding: 0 12px;
+      margin-top: 23px;
+      border-left-width: 2px;
+      border-left-style: solid;
+    }
+    i {
+      flex: 1;
+      height: 1px;
+      display: block;
+      border-bottom-width: 1px;
+      border-bottom-style: dashed;
+      margin-top: 29px;
+    }
+  }
+  .market-tbody-li {
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .even {
+    line-height: 60px;
+    float: left;
+    text-align: right;
+    &:nth-child(1) {
+      width: 15%;
+      position relative;
+      span:nth-child(1) {
+        position: absolute;
+      }
+    }
+    &:nth-child(2) { width: 25% }
+    &:nth-child(3) { width: 25% }
+    &:nth-child(4) { width: 25% }
+    &:nth-child(5) {
+      width: 10%;
+      cursor: pointer;
+    }
+    .rose-label {
+      display: inline-block;
+      width: 70px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      padding: 0;
+      background: none!important;
+      margin-right: -15px;
+    }
+    .evenSymbol {
+      margin-left: 120px;
+      font-weight: 700!important;
+      font-size: 14px;
+    }
+    .marketIcon {
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+  .newPrice {
+    line-height: auto !important;
+    padding-top: 22px;
+    box-sizing: border-box;
+    p {
+      line-height: 15px;
+    }
+    .price {
+      font-size: 14px;
+    }
+  }
+  .even:first-child {
+    text-align: left;
+    position: relative
+  }
+}

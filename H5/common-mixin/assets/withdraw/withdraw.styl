@@ -1,0 +1,112 @@
+.page-withdraw {
+  .addressBox-page-icon {
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      .addressBox-page-market {
+        display: block;
+      }
+    }
+    .addressBox-page-market {
+      display: none;
+      position: absolute;
+      top: 28px;
+      width: 340px;
+      padding: 20px;
+      right: 0;
+      box-sizing: border-box;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      z-index: 4
+    }
+  }
+  .withdraw-header {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.15rem;
+    font-size: 0.14rem;
+  }
+  .goAddress {
+    font-size: 0.14rem;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 0.2rem;
+    margin-top: 0.16rem;
+  }
+  .withdraw-details {
+    padding: 0.15rem;
+    .symbol {
+      display: flex;
+      justify-content: space-between;
+      .coin {
+        font-size: 0.16rem;
+        line-height: 0.32rem;
+      }
+      .link {
+        font-size: 0.12rem;
+        line-height: 0.32rem;
+      }
+    }
+    .numberList {
+      margin: 0.1rem 0;
+      font-size: 0.12rem;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        // float: left;
+      }
+      li {
+        margin-bottom: 4px
+      }
+      .numberList-key {
+        line-height: 20px;
+        li { text-align: end; }
+      }
+      .numberList-value {
+        line-height: 20px;
+        margin-left: 20px;
+        text-align: right;
+      }
+      .numberList-last {
+        margin-left: 64px;
+      }
+    }
+    .ServiceSpk {
+      font-size: 12px;
+      line-height: 30px;
+      padding-right: 5px;
+    }
+    .details-warking {
+      margin-top: 37px;
+      font-size: 12px;
+      .dayMax{
+        margin-left:28px;
+        margin-top:10px;
+      }
+    }
+  }
+  .withdraw-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0!important;
+    }
+  }
+  .warning {
+    margin-top: 0.16rem;
+    .warning-title {
+      font-size: 0.12rem;
+      line-height: 0.2rem;
+    }
+    .warning-list {
+      margin-top: 0.1rem;
+      font-size: 0.12rem;
+      line-height: 0.22rem;
+    }
+  }
+}

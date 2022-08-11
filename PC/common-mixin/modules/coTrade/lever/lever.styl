@@ -1,0 +1,292 @@
+.lever-box {
+
+  .leverage-type {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 2px;
+    >div {
+      flex: 1;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 2px;
+      border-style: solid;
+      border-width: 1px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .max-can-open {
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto 1px;
+    padding: 20px 20px 20px 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    user-select: none;
+    span {
+      color: #F2A816;
+    }
+  }
+
+  .add-and-sub {
+    height: 40px;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+    border-radius: 2px;
+
+    .label {
+      padding-left: 8px;
+      font-size: 14px;
+      padding-right: 16px;
+      user-select: none;
+    }
+
+    .options {
+      width: 38px;
+      height: 40px;
+    }
+    .add, .sub {
+      display: block;
+      width: 100%;
+      height: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 2px;
+      .hover-show {
+        display: none;
+      }
+      .icon {
+        transform: rotate(90deg);
+      }
+      &:hover {
+        .hover-hide {
+          display: none;
+        }
+        .hover-show {
+          display: block;
+        }
+      }
+    }
+    .add {
+      border-right-width: 0px;
+      border-top-width: 0px;
+      border-bottom-width: 0px;
+
+      .icon {
+        transform: rotate(-90deg);
+      }
+    }
+    .sub {
+      border-right-width: 0px;
+      border-bottom-width: 0px;
+    }
+
+    .content {
+      flex: 1;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+
+      input {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        text-align: left;
+        user-select: none;
+      }
+    }
+  }
+
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  // ****************************************
+  .percentage-mag {
+    margin-top 20px
+  }
+
+  .risk-bar {
+    -ms-flex 1
+    flex 1
+    background linear-gradient(90deg, #04BC8B, #EB4D5C)
+    position relative
+  }
+
+  .risk-Percentage {
+    margin-top 30px
+    width 100%
+    height 15px
+    display -ms-flexbox
+    display flex
+    position relative
+  }
+
+  .warning_icon {
+    top 9px
+    position absolute
+    right 10px
+  }
+
+  .gg_text {
+    position absolute
+    top 0
+    left 0
+    right 0
+    text-align center
+    line-height 15px
+    font-size 16px
+    color $white-color
+    text-shadow 1px 1px 2px #333333
+  }
+
+  .percentage_bar {
+    position absolute
+    width 50%
+    left 0
+    top 0
+    height 15px
+  }
+
+  .risk-num {
+    position absolute
+    z-index 9
+    left 0
+    padding-left 7px
+    top 0px
+    height 15px
+    line-height 14px
+    border-left 3px solid #fff
+    font-size 14px
+
+    &.transition {
+      transition all 0.3s linear
+    }
+
+    span {
+      position absolute
+      top -20px
+      left -10px
+    }
+  }
+
+  .transaction-drag {
+    position relative
+    width calc(100% - 15px)
+    margin-top 25px
+    height 40px
+  }
+  .drag-bar {
+    position: absolute;
+    height: 4px;
+    top: 0;
+    z-index: 1;
+    left: 4px;
+  }
+  .drag-def, .drag-cover {
+    position absolute
+    display block
+    height 4px
+    top 3px
+    left 4px
+  }
+
+  .drag-def {
+    width 100%
+  }
+
+  .drag-cover {
+    background #ff00ff
+  }
+
+  .drag-turnColor {
+    background red
+  }
+
+  .drag-step {
+    position absolute
+    left 0%
+    display block
+    top -1px
+    border-radius 100px
+    border-width: 2px;
+    border-style: solid;
+    width 12px
+    height 12px
+    cursor pointer
+    z-index 5
+    box-sizing: border-box;
+    &.transition {
+      transition all 0.2s ease
+    }
+
+    .icon_h {
+      display block
+      height 8px
+      width 3px
+      margin 3px 0 0 5px
+      background none
+      border-left 1px solid #fff
+      border-right 1px solid #fff
+    }
+  }
+
+  .transaction-drag i {
+    // background: #293448;
+    position absolute
+    top 1px
+    display block
+    width 8px
+    height 8px
+    cursor pointer
+    z-index 4
+    text-align right
+    border-width 1px
+    border-style solid
+    border-top none
+    border-bottom none
+    border-radius: 50px;
+  }
+
+  .transaction-drag i.selected {
+    background $input-focus-border
+  }
+
+  .transaction-drag i.drag-step0 {
+    left calc(25% + 4px)
+  }
+
+  .drag-step-wrap {
+    display inline-block
+    width 100%
+    position relative
+  }
+
+  .mark {
+    display inline-block
+    width 36px
+    text-align center
+    left -12px
+    top 20px
+    position absolute
+    user-select none
+    font-size: 12px;
+  }
+
+  .no-drop {
+    .transaction-drag i, .drag-step.transition {
+      cursor no-drop
+    }
+  }
+}

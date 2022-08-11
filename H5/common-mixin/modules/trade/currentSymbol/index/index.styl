@@ -1,0 +1,220 @@
+.page-content-chain .tradeModel-exchange, .page-content-chain #tradeModel-lever{
+  .currency-notes-modal {
+    top: 39px!important;
+  }
+  .currentSymbol {
+    height: 39px!important;
+  }
+  .symbol-total {
+    height: 39px!important;
+    line-height: 39px!important;
+  }
+  .coin-label {
+    margin-top: 3px!important;
+  }
+  .symbol-info {
+    padding: 5px 16px 0 0!important;
+    .vla {
+      margin-top: 5px!important;
+    }
+  }
+  .price-box {
+    line-height: 14px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .symbol-number {
+    // font-size: 12px!important;
+    display: block;
+    margin-left: 0!important;
+  }
+}
+.mobile-trade-page #tradeModel-lever .top-mag {
+  height: auto!important;
+}
+.currentSymbol {
+  height: 69px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  .eft-box {
+    display: inline-block;
+    margin-left: 5px;
+    .eft-box-icon {
+      vertical-align: middle;
+      margin-left: 5px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .eft-box-icon-box {
+      display: inline-block;
+      &:hover {
+        .page-market {
+          display: block;
+        }
+      }
+    }
+    .page-market {
+      display: none;
+      position: absolute;
+      // top: 75px;
+      width: 360px;
+      padding: 20px;
+      // right: -5px;
+      box-sizing: border-box;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      z-index 99;
+      box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+      .page-market-even {
+        margin-bottom: 15px;
+      }
+      .page-market-click {
+        cursor: pointer;
+        margin-top: 5px;
+      }
+    }
+  }
+  .price-box {
+    display: inline-block;
+  }
+  .price-box-eft {
+    vertical-align: middle;
+    line-height: 16px;
+    margin-left: 5px;
+    .symbol-number {
+      // font-size: 12px!important;
+      display: block;
+      margin-left: 0!important;
+    }
+    .price-box-eft  {
+      display: block
+    }
+  }
+  .symbol-total {
+    line-height: 69px;
+    float: left;
+    padding-left: 16px;
+
+    span {
+      vertical-align: middle;
+    }
+
+    .symbol-name {
+      display: inline-block;
+      position: relative;
+      font-size: 18px;
+    }
+    .symbol-name{
+      position relative
+      .coin-label{
+        white-space:nowrap;
+        display:inline-block;
+        font-size:12px;
+        font-weight:400;
+        padding:0 4px;
+        border-radius:2px;
+        line-height:17px;
+        vertical-align top
+        margin-top 18px;
+        margin-right 5px;
+        position: relative;
+        overflow: hidden;
+        .coin-label {
+          position: relative;
+          z-index: 1;
+          margin: 0;
+          padding: 0;
+        }
+        .coin-bg {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0.2;
+        }
+      }
+    }
+
+    .symbol-number {
+      font-size: 16px;
+      margin-left: 5px;
+    }
+
+    .symbol-property {
+      font-size: 12px;
+    }
+  }
+
+  .symbol-info {
+    float: right;
+    padding: 18px 16px 0 0;
+    height: 34px;
+
+    .info-item {
+      float: left;
+      margin-left: 20px;
+      font-size: 12px;
+      text-align: right;
+      position: relative
+      &:hover {
+        .page-market-jz {
+          display: block;
+        }
+      }
+      .page-market-jz {
+        display: none;
+        position: absolute;
+        top: 52px;
+        width: 360px;
+        padding: 20px;
+        // right: -5px;
+        box-sizing: border-box;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 20px;
+        z-index 99;
+        text-align: left;
+        box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+      }
+      .jzTit {
+        vertical-align: middle;
+        .icon {
+          font-size: 12px;
+          cursor: pointer
+        }
+      }
+      span {
+        display: block;
+      }
+
+      .vla {
+        margin-top: 10px;
+      }
+    }
+  }
+  .symbol-name-vla,
+  .market-show-button {
+    display: none;
+  }
+  
+}
+.currency-notes-modal {
+  position: absolute;
+  left: 0px;
+  top: 59px;
+  z-index: 99;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter, .fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}

@@ -1,0 +1,87 @@
+.trade-box {
+  font-size: 0.12rem;
+  padding: 0;
+  padding-bottom: 2rem;
+  .title-block {
+    height: 29px;
+    line-height: 29px;
+    padding: 0 0.15rem;
+    // border-bottom-width: 1px;
+    // border-bottom-style: solid;
+    .tab {
+      display: inline-block;
+      border-bottom-style: solid;
+      border-bottom-width: 0px;
+      height: 28px;
+      cursor: pointer;
+      user-select: none;
+      margin-right: 0.3rem;
+      font-size: 14px;
+      &.a-12-bd {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+      }
+    }
+    .total-assets {
+      float: right;
+      height: 28px;
+    }
+  }
+  .trade-block {
+    // width: 50%;
+    float: left;
+  }
+  .trade-depth {
+    float: left;
+    width: 50%;
+  }
+  .trade-form {
+    float: left;
+    width: 50%;
+    padding-left: 0.15rem;
+    box-sizing: border-box;
+    .transactionType {
+      margin: 0.1rem 0;
+    }
+    .have {
+      margin-top: 0.1rem;
+      display: inline-block;
+    }
+    .top-mag {
+      height: 35px;
+      line-height: 35px;
+      .lov {
+        float: right;
+      }
+    }
+    .percentage {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      margin: -19px -5px 0  -5px;
+      .per-item {
+        display: block;
+        width: 25%;
+        border-style: solid;
+        margin: 0 5px;
+        border-width: 1px;
+        text-align: center;
+        line-height: 24px;
+        height: 22px;
+        cursor: pointer;
+        user-select: none;
+        border-radius: 2px;
+      }
+    }
+    .volume-trade {
+      min-height: 40px;
+      line-height: 20px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+  }
+  .totalBalancesHide {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+}

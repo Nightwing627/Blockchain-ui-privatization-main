@@ -1,0 +1,360 @@
+.free-staking-detail {
+  background-position: top center;
+  background-repeat: no-repeat;
+  .fade-enter-active, .fade-leave-active {
+    transition all 0.3s ease
+  }
+
+  .fade-enter, .fade-leave-to {
+    transform translateX(10px)
+    opacity 0
+  }
+
+  .free-staking-header {
+    margin 0 auto 20px auto
+    width 1180px
+    height 180px
+    position relative
+
+    .popup-cont {
+      position absolute
+      left 0
+      top 178px
+      z-index 9
+    }
+
+    .project-logo {
+      float left
+      cursor: pointer
+      height 100%
+      position: relative
+      img {
+        width 80px
+        height 80px
+        margin-top 52px
+        display block
+      }
+    }
+
+    .project-name {
+      cursor pointer
+      float left
+      font-family PingFangSC-Medium
+      font-size 32px
+      padding 0 30px
+      height 180px
+      line-height 180px
+      color: rgba(237,244,248,1);
+    }
+
+    .project-info {
+      float left
+      height 87px
+      border-left 1px solid rgba(32,47,71,1)
+      margin-top 50px
+      padding-left 30px
+
+      .project-title {
+        vertical-align: bottom
+        padding-top: 3px;
+        font-size 16px
+        line-height 16px
+        padding-bottom 12px
+        color: rgba(237,244,248,1);
+
+        span {
+          display inline-block
+          font-size 12px
+          margin-left 5px
+          vertical-align bottom
+          line-height 12px
+        }
+      }
+
+      .project-range {
+        font-family PingFangSC-Semibold
+        font-size 28px
+        color #24A0F5
+        padding-bottom 2px
+        line-height 40px
+      }
+
+      .project-range-text {
+        font-size 12px
+      }
+    }
+
+    .nav-active {
+      margin-top 71px
+      float right
+
+      .nav-active-text {
+        font-size 14px
+      }
+    }
+  }
+
+  .project-content {
+    &.mart-20 {
+      margin-top 20px
+    }
+
+    width 1180px
+    margin 0 auto
+    padding-bottom 50px
+
+    .project-content-title {
+      border-bottom 1px solid
+
+      .titlel {
+        padding-left 20px
+        font-size 16px
+        line-height 62px
+        float left
+      }
+
+      .titler {
+        padding-right 20px
+        float right
+        line-height 62px
+        cursor pointer
+
+        span {
+          font-size 14px
+          padding-left 6px
+        }
+      }
+    }
+
+    .project-status-cont {
+      width 880px
+      margin 30px auto 0 auto
+    }
+  }
+
+  .process-line-cont {
+    overflow hidden
+
+    .process-line {
+      float left
+      margin-right 32px
+
+      &:last-child {
+        margin-right 0
+      }
+
+      .process-linel {
+        float left
+        min-width 73px
+        width: 75px
+
+        .process-line-circle {
+          width 50px
+          height 50px
+          border-radius 50%
+          text-align center
+          line-height 50px
+          font-size 22px
+        }
+
+        .process-line-text {
+          padding 14px 0px 5px 0px
+          font-size 14px
+        }
+
+        .process-line-date {
+          font-size 14px
+          white-space nowrap
+        }
+      }
+
+      .process-liner {
+        float left
+        width 94px
+        height 1px
+        margin-top 25px
+
+        .process-liner-fill {
+          width 100%
+          height 1px
+        }
+      }
+    }
+  }
+
+  .process-rate {
+    margin-top 50px
+
+    .process-title {
+      font-size 14px
+      line-height 14px
+      padding-bottom 10px
+
+      .titlel {
+        float left
+      }
+
+      .titler {
+        float right
+      }
+    }
+
+    .process-rate-line {
+      width 880px
+      height 12px
+      overflow: hidden;
+      .process-rate-line-fill {
+        width 50%
+        height 12px
+      }
+    }
+
+    .process-value {
+      margin-top 10px
+      font-size 14px
+      line-height 14px
+
+      .valuel {
+        float left
+      }
+
+      .valuer {
+        float right
+      }
+    }
+  }
+
+  .project-warning {
+    margin-top 80px
+    font-size 12px
+    line-height 26px
+  }
+
+  .user-buy {
+    margin-top 50px
+
+    .user-buy-title {
+      font-size 12px
+    }
+
+    .user-lock-account {
+      margin-top 5px
+      font-size 22px
+      font-family PingFangSC-Semibold
+      line-height 30px
+
+      .num {
+        padding-right 10px
+      }
+    }
+
+    .user-lock-input {
+      margin-top 50px
+
+      .user-lock-title {
+        font-size 12px
+      }
+      .user-input{
+        width: 380px
+      }
+    }
+
+    .user-account {
+      width: 380px
+      padding-top 6px
+      line-height 17px
+
+      .user-account-num {
+        font-size 12px
+        float left
+      }
+
+      .user-account-all {
+        cursor pointer
+        float right
+        font-size 12px
+      }
+    }
+
+    .user-income {
+      margin-top 40px
+      width 100%
+      height 60px
+      line-height 60px
+      border-radius 2px
+      text-align center
+
+      span {
+        font-size 14px
+        height 30px
+        vertical-align middle
+
+        &.num {
+          font-family PingFangSC-Semibold
+          font-size 22px
+          height 30px
+        }
+
+        &.coin {
+          font-family PingFangSC-Semibold
+          padding-left 8px
+          font-size 22px
+          height 30px
+        }
+      }
+    }
+  }
+
+  .user-buyed-income {
+    margin-top 50px
+
+    .user-income-item {
+      float left
+      padding-right 50px
+      padding-left 50px
+      border-right 1px solid
+
+      &:first-child {
+        padding-left 0px
+      }
+
+      &.noborder {
+        border none
+      }
+
+      .user-income-title {
+        font-size 12px
+        line-height 17px
+        padding-bottom 5px
+      }
+
+      .num, .coin {
+        font-family PingFangSC-Semibold
+        font-size 22px
+        line-height 30px
+      }
+
+      .coin {
+        padding-left 10px
+      }
+    }
+  }
+
+  .user-submit {
+    margin-top 80px
+
+    .text {
+      display inline-block
+      vertical-align middle
+      font-size 12px
+      line-height 12px
+      cursor pointer
+      padding-left 5px
+      padding-bottom 4px
+    }
+
+    .submit-btn {
+      margin-top 20px
+    }
+  }
+}

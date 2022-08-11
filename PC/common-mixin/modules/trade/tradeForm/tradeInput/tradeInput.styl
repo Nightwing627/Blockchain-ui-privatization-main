@@ -1,0 +1,77 @@
+.trade-input.trade-input-china-container {
+    height: 96px;
+    position: relative;
+    .tit {
+      font-size: 12px;
+      font-weight: 600;
+      color: RGB(167, 180, 203);
+      margin-bottom: 11px;
+    }
+    .input-item {
+      height: 48px;
+      border-radius: 4px;
+      border: 1px solid rgba(167, 180, 203, .3) !important;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: text;
+      .inputs {
+        font-size: 14px;
+        width: 90%;
+        font-weight: 500;
+        color: RGB(30, 31, 32);
+      }
+      .units {
+        font-size: 14px;
+        font-weight: 600;
+        color: RGB(167, 180, 203);
+      }
+    }
+    .price-rate {
+      hfont-size: 14px;
+      font-weight: 600;
+      color: RGB(167, 180, 203);
+      margin-right: 10px;
+    }
+    .disabledText {
+      font-size: 14px;
+    }
+    .error-msg {
+      border-radius: 2px;
+      line-height: 32px;
+      height: 30px;
+      position: absolute;
+      top: -44px;
+      left: 0;
+      right: 0;
+      padding: 0 20px;
+      em {
+        display: block;
+        border-width: 7px;
+        position: absolute;
+        bottom: -14px;
+        left: 15px;
+        border-style: solid dashed dashed;
+        border-color: #EB4D5C transparent transparent;
+        font-size: 0;
+        line-height: 0;
+      }
+    }
+    &.disabledForm {
+      .input-item {
+        border-style: dashed;
+      }
+    }
+  }
+  .slide-fade-enter-active {
+    transition: all .5s;
+  }
+  .slide-fade-leave-active {
+    transition: all .5s;
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+    transform: translateY(-5px);
+    opacity: 0;
+  }

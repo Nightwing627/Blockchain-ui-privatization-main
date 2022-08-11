@@ -1,0 +1,235 @@
+.page-krw-recharge {
+  .confirmMess {
+    li {
+      padding: 15px 20px;
+      margin-top: 1px;
+      .key {
+        font-size: 12px;
+      }
+      .value {
+        margin-top: 6px;
+        font-size: 14px;
+      }
+    }
+  }
+  .alertTitle {
+    margin-bottom: 15px;
+  }
+  .alertText {
+    width: 285px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 20px;
+  }
+  .recharge-header {
+    height: 55px;
+    line-height: 55px;
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  .recharge-details {
+    padding: 28px 40px;
+    min-height: 222px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    .details-left {
+      float: left;
+    }
+    .details-right {
+      float: right;
+    }
+    .messages {
+      width: 380px;
+      margin-top: 26px;
+      font-size: 12px;
+      .key {
+        white-space: nowrap;
+        text-align: right;
+        padding: 0 8px;
+        width: 1px;
+      }
+      .value {
+        line-height: 16px;
+        padding-right: 8px;
+        position: relative;
+        overflow: hidden;
+        .valueInp {
+          position: absolute;
+          left: -1000px;
+          top: -1000px;
+        }
+      }
+      td {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-top: 1px;
+      }
+      .copyTd {
+        padding-right: 8px;
+        text-align: right;
+        .icon {
+          cursor: pointer;
+        }
+        .svgs {
+          .info {
+            display: inline-block
+          }
+          .active {
+            display: none
+          }
+          &:hover {
+            .active {
+              display: inline-block
+            }
+            .info {
+              display: none
+            }
+          }
+        }
+      }
+      .even {
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+      }
+    }
+    .symbol {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    .numberList {
+      margin-top: 22px;
+      font-size: 12px;
+      ul {
+        float: left;
+      }
+      li {
+        margin-bottom: 4px
+      }
+      .numberList-key {
+        line-height: 20px;
+        li { text-align: end; }
+      }
+      .numberList-value {
+        line-height: 20px;
+        margin-left: 20px;
+      }
+      .numberList-last {
+        margin-left: 64px;
+      }
+    }
+    .details-warking {
+      margin-top: 37px;
+      font-size: 12px;
+    }
+    .details-title {
+      font-size: 14px;
+      line-height: 12px;
+      span { margin-right: 7px; }
+    }
+    .address {
+      width: 320px;
+      height: 30px;
+      padding: 0 10px;
+      margin-top: 18px;
+      overflow: hidden;
+      position: relative
+      input {
+        position: absolute;
+        opacity: 0;
+        left: -1000px;
+        top: -1000px;
+      }
+      .text {
+        font-size: 12px;
+        line-height: 30px;
+      }
+      .copy {
+        margin-left: 9px;
+        cursor: pointer;
+        .info {
+          display: inline-block;
+        }
+        .active {
+          display: none;
+        }
+        &:hover {
+          .active {
+            display: inline-block;
+          }
+          .info {
+            display: none;
+          }
+        }
+      }
+    }
+    .addressPage {
+      width: 320px;
+      height: 30px;
+      padding: 0 10px;
+      margin-top: 2px;
+      position: relative
+      .iconPage {
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+        cursor: pointer;
+        &:hover {
+          .iconPage-market {
+            display: block;
+          }
+        }
+        .iconPage-market {
+          display: none;
+          position: absolute;
+          top: 32px;
+          width: 340px;
+          right: -10px;
+          padding: 20px;
+          box-sizing: border-box;
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        left: -1000px;
+        top: -1000px;
+      }
+      .page {
+        font-size: 12px;
+      }
+      .text {
+        font-size: 12px;
+        line-height: 30px;
+        margin-left: 6px;
+      }
+      .copy {
+        margin-left: 9px;
+        cursor: pointer
+      }
+    }
+    .addressQRCode {
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        display block;
+      }
+    }
+  }
+  .recharge-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0!important;
+    }
+  }
+}

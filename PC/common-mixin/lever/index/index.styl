@@ -1,0 +1,77 @@
+.trade-content {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    min-width: 1280px;
+  }
+  .left-block {
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  .lever-main-block {
+    height: 960px;
+    padding: 0 650px 0 305px;
+  }
+  .right-block {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 645px;
+    overflow: hidden;
+  }
+  // 小屏幕
+  .trade-content {
+    .left-expand {
+      .lever-main-block {
+        padding-left: 305px;
+      }
+    }
+    .left-shrinks {
+      .left-block {
+        width: 100px;
+      }
+      .lever-main-block {
+        padding-left: 105px;
+      }
+    }
+  }
+  .trade-shrinks {
+    .lever-main-block {
+      padding: 0 325px 0 105px;
+    }
+    .right-block {
+      width: 320px;
+    }
+  }
+  .lever-transaction {
+    height: 430px;
+    margin-top: 5px;
+  }
+  .chart-box {
+    position: relative;
+  }
+// 国际版 样式
+.Int-trade {
+  .trade-content {
+    padding: 0 5px 0 0;
+    .left-block {
+      left: 0;
+      top: 0;
+      height: 100%;
+    }
+    .right-block {
+      top: 0;
+      height: 100%;
+    }
+    .lever-transaction {
+      height: 400px;
+    }
+    .lever-main-block {
+      height: auto;
+      min-height: 800px;
+    }
+  }
+}

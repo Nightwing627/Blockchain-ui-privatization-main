@@ -1,0 +1,111 @@
+.trade-limit-text {
+  font-size 12px
+  line-height 18px
+  margin-top 15px
+}
+
+.trade-noticeDialog {
+  .trade-noticeDialog-even {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    span {
+      cursor: pointer
+    }
+  }
+}
+.trade-content {
+  position relative
+  padding 5px
+  overflow hidden
+  min-width 1280px
+
+  .left-block {
+    width 300px
+    overflow hidden
+    position absolute
+    left 5px
+    top 5px
+  }
+
+  .main-block {
+    height 900px
+    padding 0 650px 0 305px
+  }
+
+  .right-block {
+    position absolute
+    top 5px
+    right 5px
+    width 645px
+    overflow hidden
+  }
+}
+
+// 市场展开收起效果
+.trade-content {
+  .left-expand {
+    .main-block {
+      padding-left 305px
+    }
+  }
+
+  .left-shrinks {
+    .left-block {
+      width 100px
+    }
+
+    .main-block {
+      padding-left 105px
+    }
+  }
+}
+
+.trade-shrinks {
+  .main-block {
+    padding 0 325px 0 105px
+  }
+
+  .right-block {
+    width 320px
+  }
+}
+
+.trade-content {
+  .transaction {
+    height 370px
+    margin-top 5px
+    clear both
+  }
+
+  .chart-box {
+    position relative
+  }
+}
+
+// 国际版 样式
+.Int-trade {
+  .trade-content {
+    padding 0 5px 0 0
+
+    .left-block {
+      left 0
+      top 0
+      height 100%
+    }
+
+    .right-block {
+      top 0
+      height 100%
+    }
+
+    .transaction {
+      height 400px
+    }
+
+    .main-block {
+      height auto
+      min-height 800px
+    }
+  }
+}

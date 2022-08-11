@@ -1,0 +1,119 @@
+.notice-info {
+  position: relative;
+  .notice-banner {
+    height: 200px;
+    padding-top: 60px;
+    margin-top: -60px;
+    text-align: center;
+    .title {
+      margin: 70px 0 20px;
+    }
+  }
+  .main-content {
+    width: 1180px;
+    margin: 40px auto 0;
+  }
+  .menu {
+    width: 190px;
+    float: left;
+    .menu-tit {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 32px;
+      margin-bottom: 17px;
+    }
+    .menu-item {
+      padding: 15px 25px 15px 20px;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  .content-box {
+    padding-left: 210px;
+  }
+  .content-list {
+    position: relative;
+    border-radius: 2px;
+    min-height: 600px;
+    .content-title {
+      font-size: 14px;
+      line-height: 55px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      padding-left: 15px;
+    }
+    .message-list {
+      padding: 0 15px;
+      li {
+        min-height: 36px;
+        padding: 16px 0 14px 0;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        &.all-select {
+          min-height: 20px;
+          padding: 16px 0 16px;
+          .status, .delete-btn {
+            margin-top: 0;
+          }
+          .message-text {
+            margin-top: 0;
+          }
+        }
+        .status {
+          float: left;
+        }
+        .message-text {
+          font-size: 14px;
+          margin: 0 0 0 20px;
+          cursor: pointer;
+          display: inline-block;
+          width: 75%;
+          a {
+            color: #1baaec;
+          }
+        }
+        .delete-btn {
+          float: right;
+        }
+      }
+    }
+    .time {
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .no-data {
+    padding: 80px 0 80px;
+    text-align: center;
+    font-size: 12px;
+    p {
+      margin-top: 5px;
+    }
+    .icon {
+      font-size: 36px;
+    }
+  }
+  //  页面动画
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .8s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    margin: -25px 0 0 -25px;
+  }
+  .pagination {
+    border-radius: 0 0 2px 2px;
+  }
+  .pagination-bar {
+    border: none;
+  }
+}

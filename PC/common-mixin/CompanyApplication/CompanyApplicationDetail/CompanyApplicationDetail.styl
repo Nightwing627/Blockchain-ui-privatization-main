@@ -1,0 +1,122 @@
+.CompanyApplicationDetail {
+  .company-application {
+    width 1180px
+    margin 30px auto 0
+
+    .step-icon {
+      width 50px
+      border-radius 25px
+      display inline-block
+      text-align center
+      font-size 22px
+      margin-right 10px
+    }
+
+    .application-header {
+      padding-top 60px
+      padding-left 60px
+      padding-bottom 40px
+      border-bottom-width 1px
+      border-bottom-style solid
+    }
+
+    .application-step {
+      height 50px
+      line-height 50px
+    }
+
+    .application-title {
+      font-size 22px
+      margin-top 40px
+
+      .title-desc {
+        font-size 12px
+        margin-left 12px
+      }
+    }
+
+    .step {
+      padding-left 60px
+      font-size 14px
+      border-bottom-width 1px
+      border-bottom-style solid
+      padding-top 42px
+      padding-bottom 42px
+      padding-right 60px
+
+      .step-title {
+        margin-bottom 15px
+        font-size 14px
+      }
+    }
+
+    .setp-line {
+      width 220px
+      display inline-block
+      border-top-style solid
+      border-top-width 1px
+      vertical-align middle
+      margin-right 10px
+    }
+
+    .option-region {
+      font-size 14px
+      margin-bottom 17px
+    }
+
+    .application-region {
+      padding-left 60px
+      padding-top 40px
+      padding-bottom 63px
+    }
+
+    .back-btn {
+      margin-left 27px
+      padding 10px
+      vertical-align bottom
+      display inline-block
+    }
+
+    .btn-region {
+      padding-bottom 30px
+    }
+
+    .application-desc {
+      font-size 12px
+      margin-top 20px
+    }
+
+    .step-desc {
+      line-height 24px
+    }
+
+    .sort {
+      line-height 22px
+    }
+
+    .back-btn {
+      margin-left 10px
+    }
+  }
+}
+
+// 国家版
+.Int {
+  .CompanyApplicationDetail {
+    &.company-application-page, .company-application {
+      margin 0
+      width auto
+      height 100%
+      padding-bottom 0
+    }
+
+    .company-application-bar {
+      width 1100px
+      margin 0 auto
+    }
+
+    .company-application .application-region, .company-application .step, .company-application .application-header {
+      padding-left 0
+    }
+  }
+}

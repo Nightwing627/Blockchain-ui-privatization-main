@@ -1,0 +1,203 @@
+.sl-swap-assets {
+  padding-bottom: 10px;
+  position: relative;
+  border-top-width: 5px;
+  border-top-style: solid;
+  user-select: none;
+  .assets-risk {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+  }
+  .title {
+    height: 39px;
+    line-height: 39px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0px 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    .tab {
+      display: inline-block;
+      border-bottom-style: solid;
+      border-bottom-width: 0px;
+      height: 38px;
+      line-height: 38px;
+      cursor: pointer;
+      user-select: none;
+      margin-right: 28px;
+      font-size: 14px;
+      &.a-12-bd {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+      }
+    }
+    .assets-tit {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 14px;
+      }
+      i {
+        font-size: 12px;
+        margin-left: 3px;
+      }
+    }
+    a {
+      font-size: 12px;
+      float: right;
+      user-select: none;
+    }
+  }
+  .assets-list {
+    padding: 5px 0;
+    li {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 16px;
+      position relative
+      .clole-style {
+        background: #fff;
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin-top: 1px;
+        margin-right: 5px;
+        border-radius: 2px;
+        &.clole-style_1 {
+          background: #91C7AE;
+        }
+        &.clole-style_2 {
+          background: #62A0A8;
+        }
+        &.clole-style_3 {
+          background: #5183BB;
+        }
+      }
+      .bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;
+      }
+      &:hover {
+        .bg {
+          display: block;
+        }
+      }
+      span {
+        position relative
+      }
+    }
+    .total-amount {
+      font-size: 14px;
+      padding: 10px 16px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      margin-bottom: 5px;
+    }
+    .fee {
+      padding: 10px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      margin-bottom: 5px;
+    }
+  }
+  .risk {
+    height: 62px;
+    display: flex;
+    justify-content space-between;
+    align-items: center;
+    padding: 0px 15px;
+    font-size: 12px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    h3 {
+      font-size: 14px;
+    }
+    .limit {
+      div {
+        margin: 8px 0px;
+      }
+    }
+  }
+  .assetsChart {
+    height: 200px;
+    position: relative;
+    padding-top: 10px;
+    .total-rate {
+      position: absolute;
+      top: 90px;
+      text-align: center;
+      width: 100%;
+      font-size: 12px;
+      line-height: 18px;
+      .text-il {
+        width: 100px;
+        margin: 0 auto;
+      }
+      .hint {
+        left: -100px;
+        top: auto;
+        bottom: 20px;
+        width: 293px;
+        padding: 5PX;
+      }
+    }
+  }
+  .futures-info-list {
+    padding: 10px 0;
+    .info-item {
+        height: 36px;
+        width: 100%;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        font-size: 12px;
+        line-height: 36px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        span {
+          display: inline-block;
+          width: 50%;
+          &.td {
+             text-align: right;
+          }
+        }
+    }
+  }
+  .hint-father {
+    position: relative;
+    >a {
+      cursor: pointer;
+      border-bottom-style: dashed;
+      border-bottom-width: 1px;
+      position: relative;
+      &:hover {
+        +p {
+          display: block;
+        }
+      }
+    }
+  }
+  .hint {
+    display: none;
+    width: 200px;
+    padding: 20px;
+    position: absolute;
+    left: 0px;
+    top: 18px;
+    z-index: 10;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    line-height: 1.5;
+  }
+  .position-top {
+    top: auto;
+    bottom: 18px;
+  }
+}

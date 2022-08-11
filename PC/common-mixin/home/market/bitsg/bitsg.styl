@@ -1,0 +1,173 @@
+.bitsg-market-container {
+  background:#fff;
+  &.inter-tableContentBase {
+    margin 0 110px 0 110px
+    position relative
+
+    .bitsg-market-top{
+      height:150px;
+      .bitsg-market-topL{
+        float: left;
+        .market-topLT{
+          font-family: Helvetica;
+          font-size: 14px;
+          color: #979797;
+          letter-spacing: 0;
+          line-height: 24px;
+          margin-top: 70px;
+          .market-topLTspan{
+            display: inline-block;
+            width: 25px;
+            height: 7px;
+            border-radius: 2px;
+          }
+        }
+        .market-topLB{
+          font-family: Helvetica-Bold;
+          font-size: 58px;
+          color: #282830;
+          letter-spacing: 0;
+          line-height: 70px;
+        }
+      }
+      .bitsg-market-topR{
+        float:right;
+        button{
+          height: 40px;
+          width: 150px;
+          margin-top: 105px;
+          border-radius: 4px;
+          border-width: 1px;
+          border-style: solid
+        }
+      }
+    }
+
+    .common-table {
+      background none
+    }
+    .home-tbody-box{
+      max-height: 500px;
+      overflow-y: scroll;
+      min-height:500px;
+    }
+    .market-table{
+      background: #FFFFFF;
+      box-shadow: 0 0 30px 0 rgba(0,0,0,0.10);
+      border-radius: 4px;
+      .borderRadius{
+        border-radius: 4px 0 0 0 ;
+      }
+      .home-thead{
+        background: #FCFCFF;
+        border: none;
+      }
+      .home-nodata{
+        height:500px
+      }
+      .home-tbody-li{
+        border-bottom-color: #F6F6F6 ;
+      }
+      .home-tbody-title{
+        border:none
+      }
+      .hoverClass{
+        box-shadow: 0 4px 12px 0 rgba(0,0,0,0.10);
+        border-radius: 4px;
+        padding: 0 10px;
+
+      }
+      .checkAll{
+        line-height: 55px;
+        text-align: center;
+        span{
+          color:#F0B90A;
+          cursor: pointer;
+          font-size:14px;
+        }
+      }
+
+    }
+    .market-title-box {
+      height 55px
+      line-height 53px
+      border-radius 2px 2px 0 0
+      position relative
+    }
+
+    .market-title {
+      text-align center
+
+      li {
+        float left
+        height 53px
+        line-height 55px
+        cursor pointer
+        user-select none
+        padding 0 25px
+
+        &.selected {
+          border-bottom-width 2px
+          border-bottom-style solid
+        }
+      }
+    }
+
+    .search {
+      position absolute
+      top 12px
+      right 20px
+      height 28px
+      line-height 26px
+      width 200px
+      border-radius 2px
+      backgorund: #fff
+      border: 1px solid #F6F6F6;
+
+      .icon-serach {
+        margin 0 10px
+      }
+
+      .search-input {
+        line-height 26px
+        border none
+        width 165px
+      }
+
+      input::-webkit-input-placeholder {
+        color #515A6B
+      }
+    }
+
+    .table-body td .rose-label {
+      display inline-block
+      width 70px
+      height 24px
+      text-align center
+      line-height 24px
+      padding 0
+    }
+
+    .table-body td .symbolName, .table-body td .icon-btn {
+      padding 0
+      vertical-align inherit
+      margin 0
+      display inline-block
+    }
+
+    .table-body td .symbolName {
+      width 80%
+      margin-left 10px
+    }
+
+    .fontSize14 {
+      font-size 14px
+    }
+  }
+
+  &.inter-tableContent {
+    width 1180px
+    margin 0 auto 0 auto
+    height:1060px;
+  }
+}

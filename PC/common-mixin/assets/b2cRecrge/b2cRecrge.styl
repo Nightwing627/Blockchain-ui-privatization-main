@@ -1,0 +1,268 @@
+.page-b2cRecrge {
+  .otherClass {
+    font-size: 12px;
+  }
+  .b2cRecrgeDialog {
+    .b2cRecrgeDialog-warn {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .confirmMess {
+      margin: 20px 0;
+      li {
+        padding: 15px 20px;
+        margin-top: 1px;
+        .key {
+          font-size: 12px;
+        }
+        .value {
+          margin-top: 6px;
+          font-size: 14px;
+        }
+        img {
+          max-width: 200px;
+          height: 120px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .imgmk {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .uploadImg {
+    overflow: hidden;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .upload-image {
+    width: 100%;
+    height: 100%;
+    margin-top: -18px;
+    display: block;
+  }
+
+  .uploadMark {
+    text-align: center;
+    padding-top: 33px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  .uploadMark-text {
+    user-select: none;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .uploadMark-mess {
+    user-select: none;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .uploadMark-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .uploadLoading {
+    z-index: 2;
+    text-align: center;
+    padding-top: 33px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .addressBox-page-icon {
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      .addressBox-page-market {
+        display: block;
+      }
+    }
+
+    .addressBox-page-market {
+      display: none;
+      position: absolute;
+      top: 28px;
+      width: 340px;
+      padding: 20px;
+      right: 0;
+      box-sizing: border-box;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      z-index: 4;
+    }
+  }
+
+  .withdraw-header {
+    height: 55px;
+    line-height: 55px;
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+
+  .goAddress {
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .withdraw-details {
+    padding: 28px 40px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+
+    .b2cRecrge-mess {
+      width: 380px;
+      margin-top: 10px;
+    }
+
+    .details-left {
+      float: left;
+    }
+
+    .details-right {
+      float: right;
+      width: 380px;
+      // 57-44=13  28-13=15
+      // margin-top: -15px
+    }
+
+    .symbol {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .ServiceSpk {
+      font-size: 12px;
+      line-height: 30px;
+      padding-right: 5px;
+    }
+
+    .details-warking {
+      margin-top: 37px;
+      font-size: 12px;
+
+      .details-warking-icon {
+        float: left;
+        margin-right: 10px;
+      }
+
+      .details-warking-text {
+        float: left;
+        display: inline-block;
+        max-width: 350px;
+        line-height: 18px;
+        word-wrap: break-word;
+      }
+
+      .recrgeWarn {
+        margin-top: -26px;
+      }
+    }
+
+    .details-wark {
+      margin-top: 10px;
+    }
+
+    .voucher {
+      margin-top: 30px;
+    }
+
+    .tolanIcon {
+      margin-left: 6px;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+
+      // float: right;
+      .iconMark {
+        display: none;
+        position: absolute;
+        -webkit-box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.28);
+        box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.28);
+        width: 300px;
+        bottom: 25px;
+        line-height: 22px;
+        left: -60px;
+        z-index: 3;
+        padding: 10px 24px;
+        font-size: 12px;
+        box-sizing: border-box;
+      }
+
+      &:hover {
+        .iconMark {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .withdraw-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    .table-head, .table-body-bar, .pagination {
+      padding: 0 !important;
+    }
+  }
+}
+
+.withdrawMsg {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+// 国际版
+.Int {
+  .page-withdraw {
+    width: 940px;
+    margin: 0 auto;
+
+    .withdraw-details {
+      border: none;
+      padding: 28px 0 40px;
+    }
+
+    .withdraw-header, .withdraw-table {
+      padding: 0;
+    }
+  }
+}

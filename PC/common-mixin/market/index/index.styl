@@ -1,0 +1,42 @@
+.marketPage {
+  position: relative;
+  padding: 5px;
+  min-height: 800px;
+  min-width: 1180px;
+  .market-block {
+    min-width: 1180px;
+  }
+  .recommend-infor {
+    box-shadow: -2px 0 10px 0 rgba(0,0,0,0.30);
+    width: 368px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 9;
+    bottom: 5px;
+    border-radius: 4px 4px 0 0;
+    .close-recommend {
+      box-shadow: -2px 0 10px 0 rgba(0,0,0,0.30);
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer;
+      top: 0;
+      left: -30px;
+    }
+  }
+}
+@media screen and (min-width: 1560px) {
+  .marketPage  {
+    .market-block {
+      padding-right: 378px;
+    }
+    .recommend-infor {
+      .close-recommend {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.contract-content {
+  position: relative;
+}
+.left-block {
+  width: 300px;
+  overflow: hidden;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.top-market {
+  padding-left: 305px;
+}
+.main-block {
+  padding: 0 650px 0 305px;
+}
+.right-block {
+  position: absolute;
+  top: 125px;
+  right: 5px;
+  width: 645px;
+  overflow: hidden;
+}
+// 小屏幕
+.trade-content {
+  .left-expand {
+    .main-block {
+      padding-left: 305px;
+    }
+  }
+  .left-shrinks {
+    .left-block {
+      width: 100px;
+    }
+    .main-block {
+      padding-left: 105px;
+    }
+  }
+}
+.trade-shrinks {
+  .main-block {
+    padding: 0 325px 0 305px;
+  }
+  .right-block {
+    width: 320px;
+  }
+}
+.chart-box {
+  position: relative;
+}
+// 国际版
+.Int-contract-content {
+  position: relative;
+  padding: 1px;
+  overflow: hidden;
+  height: 100%;
+  .left-block {
+    left: 0px;
+    top: 0;
+    min-height: 740px;
+    height: calc(100% - 365px);
+    .transaction {
+      height: 100%;
+      height: 100%;
+    }
+  }
+  .main-block {
+    margin-top: -1px;
+    padding-left: 306px;
+    height: calc(100% - 483px);
+    .center-block {
+      height: 100%;
+    }
+    .chart-box {
+      height: calc(100% - 70px);
+    }
+  }
+  .top-market {
+    padding: 0 0 0 306px;
+  }
+  .right-block {
+    top: 120px;
+    height: calc(100% - 485px);
+  }
+  // 国家版小屏幕
+  @media screen and (max-height: 1080px) {
+    .left-block {
+      height: 100%;
+    }
+    .order-list {
+      padding-left: 306px;
+    }
+  }
+}
+.market-fade-enter-active {
+  transition: all 0.4s ease;
+}
+
+.market-fade-leave-active {
+  transition: all 0.4s ease;
+}
+
+.market-fade-enter, .market-fade-leave-to, {
+  transform: translateY(-100%);
+  opacity: 0;
+}

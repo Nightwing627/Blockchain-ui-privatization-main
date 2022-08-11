@@ -1,0 +1,119 @@
+.page-withdraw {
+  .addressBox-page-icon {
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      .addressBox-page-market {
+        display: block;
+      }
+    }
+    .addressBox-page-market {
+      display: none;
+      position: absolute;
+      top: 28px;
+      width: 340px;
+      padding: 20px;
+      right: 0;
+      box-sizing: border-box;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      z-index: 4
+    }
+  }
+  .withdraw-header {
+    height: 55px;
+    line-height: 55px;
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  .goAddress {
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer
+  }
+  .withdraw-details {
+    padding: 28px 40px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    .details-left {
+      float: left;
+    }
+    .details-right {
+      float: right;
+      width: 380px;
+      // 57-44=13  28-13=15
+      margin-top: -15px
+    }
+    .symbol {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    .numberList {
+      margin-top: 22px;
+      font-size: 12px;
+      ul {
+        float: left;
+      }
+      li {
+        margin-bottom: 4px
+      }
+      .numberList-key {
+        line-height: 20px;
+        li { text-align: end; }
+      }
+      .numberList-value {
+        line-height: 20px;
+        margin-left: 20px;
+      }
+      .numberList-last {
+        margin-left: 64px;
+      }
+    }
+    .ServiceSpk {
+      font-size: 12px;
+      line-height: 30px;
+      padding-right: 5px;
+    }
+    .details-warking {
+      margin-top: 37px;
+      font-size: 12px;
+      .dayMax{
+        margin-left:28px;
+        margin-top:10px;
+      }
+    }
+  }
+  .withdraw-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0!important;
+    }
+  }
+}
+.withdrawMsg{
+  margin-top 30px
+  font-size 12px
+  line-height 18px
+}
+// 国际版
+.Int {
+  .page-withdraw{
+    width: 940px;
+    margin: 0 auto;
+    .withdraw-details {
+      border: none;
+      padding: 28px 0 40px;
+    }
+    .withdraw-header,
+    .withdraw-table {
+      padding: 0;
+    }
+  }
+}

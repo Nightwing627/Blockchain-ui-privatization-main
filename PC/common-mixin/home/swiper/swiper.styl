@@ -1,0 +1,182 @@
+.internationalHome-swiper-base {
+  background-position: left top;
+  height: 398px;
+  width: 100%;
+  padding-top: 60px;
+  box-sizing: border-box;
+  .title {
+    font-size: 40px;
+    margin: 20px auto 0 auto;
+    text-align: left;
+    width: 1180px;
+  }
+  .text {
+    font-size: 16px;
+    text-align: left;
+    width: 1180px;
+    margin: 0 auto 0 auto;
+  }
+  .imgBox {
+    .img-ul {
+      height: 160px;
+      margin: 0 auto;
+      width: 1180px;
+      overflow: hidden;
+      // width: 1
+      margin-top: 48px;
+      li {
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.5);
+        &:first-child {
+          margin: 0;
+        }
+        &:hover {
+          border-width: 1px;
+          border-style: solid;
+          img {
+            width: 278px;
+            height: 138px;
+            display: block;
+            cursor: pointer;
+          }
+        }
+        img {
+          width: 280px;
+          height: 140px;
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+    .sNav {
+      width: 1135px;
+      margin: 0 auto 0 auto;
+      text-align: right;
+    }
+    .img-pages {
+      display: inline-block;
+      li {
+        float: left;
+        width: 8px;
+        height: 6px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:last-child {
+          margin-right: 0;
+        }
+        .pageBg {
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          opacity: 0.3;
+          display: block;
+        }
+      }
+      .active {
+        width: 40px;
+        position: relative;
+        .pageBar {
+          display: block;
+          height: 6px;
+          background: #fff;
+          transition: all 0.1s linear;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+// 欧美版样式
+.europe-swiper-base {
+  width: 100%;
+  height: 500px;
+  border-bottom: 1px solid #263043;
+  position: relative;
+  .banner-box {
+    height: 360px;
+    width: 100%;
+    position: relative;
+  }
+  .banner-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+  }
+  .thumb-nav {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    .slideBtn {
+      cursor: pointer;
+      position: absolute;
+      top: 28px;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .prevBtn {
+      left: 0;
+    }
+    .nextBtn {
+      right: 0;
+    }
+    .thumb-box {
+      width: 1080px
+      position: relative;
+      height: 100px;
+      margin: 0 auto;
+      overflow: hidden;
+      .thumb-ul {
+        position: absolute;
+        top: 0;
+        // transition: all 0.6s linear;
+      }
+      .thumb-item {
+        height: 100px;
+        float: left;
+        width: 270px;
+        position: relative;
+        cursor: pointer;
+        p {
+          padding: 40px 20px  20px;
+          font-size: 14px;
+          color: #EDF4F8;
+        }
+        .pageBg {
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          opacity: 0.3;
+          display: block;
+        }
+      }
+      .active {
+        background: #263043;
+        .pageBg {
+          background: #EDF4F8;
+        }
+        .pageBar {
+          display: block;
+          height: 2px;
+          background: #fff;
+          transition: all 0.1s linear;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

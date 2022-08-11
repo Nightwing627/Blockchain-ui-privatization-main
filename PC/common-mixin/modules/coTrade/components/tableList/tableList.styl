@@ -1,0 +1,148 @@
+.tableList-container {
+  .thead {
+    height 27px
+    line-height 27px
+    font-size 12px
+    background-color rgba(228, 228, 228, .25)
+    span {
+      display inline-block
+      color rgb(167, 180, 203)
+      font-weight 600
+      &:first-child {
+        text-align: left;
+        box-sizing: border-box;
+        padding-left: 12px;
+      }
+    }
+  }
+
+  .tbody {
+    padding 5px 0 2px
+    position relative
+    font-size 12px
+    transiton height 0.5s ease
+    width 100%
+    -webkit-transition height 0.5s ease
+    margin-top -1px
+
+    &.no-padding {
+      padding 0
+    }
+    .symbol-item {
+      padding 0 15px 0 0
+      line-height 32px
+      cursor pointer
+      position relative
+      .bg {
+        display none
+      }
+      &.change-item {
+        .change {
+          position absolute
+          animation 1s opacity2 0s 1
+          top 0
+          left 2px
+          height 100%
+          width 100%
+          opacity 0
+        }
+      }
+      &:hover {
+        .bg {
+          display block
+          position absolute
+          top 0
+          left 0
+          height 100%
+          width 100%
+        }
+      }
+      span {
+        &.td-symbol {
+          text-align: left;
+          box-sizing: border-box;
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+  @keyframes opacity2 {
+    0% {
+      opacity 1
+    }
+
+    100% {
+      opacity 0
+    }
+  }
+  @keyframes opacity2 {
+    0% {
+      opacity 1
+    }
+
+    100% {
+      opacity 0
+    }
+  }
+  @keyframes opacity2 {
+    0% {
+      opacity 1
+    }
+
+    100% {
+      opacity 0
+    }
+  }
+  .thead, .tbody {
+    span {
+      display inline-block
+      text-align right
+      position relative
+      z-index 9
+      .icon {
+        display inline-block
+        vertical-align middle
+        height 16px
+        background #f00
+        float left
+        margin 8px 5px 0 0
+      }
+      .hover_show {
+        display none
+      }
+      &:hover {
+        .hover_show {
+          display block
+        }
+        .hover_hide {
+          display none
+        }
+      }
+    }
+  }
+
+  .tr-bg {
+    position absolute
+    height 32px
+    top 0
+    right -20px
+    z-index 1
+    padding 0
+    width 10%
+    transiton width 0.5s ease
+    -webkit-transition width 0.5s ease
+  }
+}
+
+// 国际版
+.Int-contract-content {
+  .tableList-container {
+    .asksOPtion {
+      position initial
+    }
+
+    .tbodyBar {
+      overflow initial !important
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.canter-echart-box {
+  z-index: 9;
+  width: 100%;
+  height: 455px;
+  position: relative;
+  .mmd-loading-circle-right, .mmd-loading-circle-left {
+    border-color: #1baaec;
+  }
+  .inline {
+    position: absolute;
+    top: 0.7rem;
+    height: 1px;
+    z-index: 9;
+    width: 100%;
+  }
+  .top-bar-block {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    position:relative;
+    padding-left: 0.15rem;
+    font-size: 14px;
+  }
+  .top-menu {
+    line-height: 0.3rem;
+    padding: 0 0.05rem
+    font-size: 12px;
+    transition: all .5s ease;
+    position: relative;
+    z-index: 9;
+    .top-menu-bar {
+      position:relative;
+      overflow: hidden;
+      height: 0.3rem;
+      width: 100%;
+      .hover_hide {
+        display: block;
+      }
+      .hover_show {
+        display: none;
+      }
+      .slide-btn {
+        position: absolute;
+        top: 0px;
+        padding: 8px 0;
+        z-index: 9;
+        cursor: pointer;
+        display: none;
+        &:hover {
+          .hover_show {
+            display: block;
+          }
+          .hover_hide {
+            display: none;
+          }
+        }
+      }
+      .slide-btn-cur {
+        display: block;
+      }
+      .icon-left {
+        left: 0;
+        padding-right: 5px;
+      }
+      .icon-right {
+        right: 0;
+        padding-left: 5px;
+      }
+    }
+    .top-menu-box {
+      height: 0.3rem;
+      overflow: hidden;
+      width: max-content;
+      white-space: nowrap;
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      transiton: left 0.2s linear;
+      -webkit-transition: left 0.2s linear;
+    }
+    .time-line {
+      display: inline-block;
+      margin: 0 0.06rem;
+      cursor: pointer;
+      background: none;
+      height: 0.28rem;
+      user-select: none;
+      &.time-line-last {
+        height: 0.32rem;
+        margin: 0;
+        padding: 0 0.12rem 0 0.1rem;
+        background-size: 8px !important;
+      }
+      &.active {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+      }
+      .hoverShow {
+        display: none;
+      }
+      &:hover {
+        .hoverHide {
+          display: none;
+        }
+        .hoverShow {
+          display: inline-block;
+        }
+      }
+    }
+    .full-btn {
+      border-left-width: 1px;
+      border-right-width: 1px;
+      border-left-style: solid;
+      border-right-style: solid;
+      padding: 0 14px;
+    }
+    &.hide {
+      opacity: 0;
+      z-index: 1;
+    }
+    .sub-timer-box {
+      position: absolute;
+      top: 0.3rem;
+      left: 0;
+      width: 90%;
+      padding: 1px 5% 0;
+      span {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        height: 0.38rem;
+        box-sizing: border-box;
+        line-height: 0.38rem;
+        position: relative;
+        .xuanzhong-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          line-height: 0;
+        }
+      }
+      .active {
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
+  }
+  .slide {
+    position: absolute;
+    top: 0.7rem;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all .5s ease;
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    &.selected {
+      transform: translateX(0%);
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+  .echarts-slide {
+    top: 0.4rem;
+  }
+  .top-tab {
+    position: absolute;
+    right: 0;
+    height: 0.4rem;
+    top: 0;
+    line-height: 0.4rem;
+    text-align: right;
+    z-index: 9;
+    .switch-chart-type {
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+  .tv_chart_container {
+    height: 100%;
+    width: 100%;
+  }
+  .loading-indicator {
+    background: none;
+  }
+  .coverKlineBox {
+    position: absolute;
+    top: 0.7rem;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  //  页面动画
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .8s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    margin: -25px 0 0 -25px;
+  }
+}
+.canter-echart-full {
+  object-fit: contain;
+  position: fixed !important;
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  box-sizing: border-box !important;
+  min-width: 0px !important;
+  max-width: none !important;
+  min-height: 0px !important;
+  max-height: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: none !important;
+  margin: 0px !important;
+}

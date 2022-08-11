@@ -1,0 +1,394 @@
+.ex-market {
+    .market-title-bar {
+      overflow-x: scroll!important;
+    }
+    font-size: 12px;
+    width: 100%;
+    // margin-top: 1px;
+    position: fixed;
+    top: 0.44rem;
+    left: 0;
+    bottom: 0.43rem;
+    z-index: 99;
+    .market-header {
+      position: relative;
+      height: 63px;
+      padding: 6px 0.15rem 0 0.15rem;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+    .search {
+      position: relative;
+      height: 28px;
+      width: 100%;
+      .icon-serach {
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        cursor: pointer;
+      }
+      .search-input {
+        height: 28px;
+        line-height: 30px;
+        padding-left: 30px;
+        border-radius: 2px;
+        width: 3.14rem;
+        border-width: 1px;
+        border-style: solid;
+      }
+      input::-webkit-input-placeholder {
+        color: #515A6B;
+        font-size: 0.12rem;
+      }
+    }
+    .kg {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 16px;
+      display: none;
+    }
+    .market-title-bar {
+      position: relative
+      width: 100%;
+      overflow: hidden;
+      height: 36px;
+      .hover_hide {
+        display: block;
+      }
+      .hover_show {
+        display: none;
+      }
+      .slide-btn {
+        position: absolute;
+        top: 10px;
+        background: #1d2635;
+        z-index: 9;
+        cursor: pointer;
+        display: none;
+        &:hover {
+          .hover_show {
+            display: block;
+          }
+          .hover_hide {
+            display: none;
+          }
+        }
+      }
+      .slide-btn-cur {
+        display: block;
+      }
+      .icon-left {
+        left: 0;
+        padding-right: 5px;
+      }
+      .icon-right {
+        right: 0;
+        padding-left: 5px;
+      }
+    }
+    .market-title {
+      height: 36px;
+      overflow: hidden;
+      width: max-content;
+      white-space: nowrap;
+      position: absolute;
+      top:0;
+      left: 0;
+      transiton: left 0.2s linear;
+      -webkit-transition: left 0.2s linear;
+      li {
+        float: left;
+        font-size: 12px;
+        line-height: 34px;
+        padding: 0 3px 2px 3px;
+        cursor: pointer;
+        margin-right: 20px;
+        &:hover, &.selected {
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          padding-bottom: 0;
+        }
+      }
+    }
+    .market-symbol {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      bottom: 0;
+      overflow: auto;
+      .thead {
+        height: 36px;
+        line-height: 36px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        padding: 0 15px;
+        span {
+          display: inline-block;
+          height: 30px;
+          overflow: hidden;
+        }
+      }
+      .tbody {
+        padding: 0 0 5px 0;
+        .block-title {
+          height: 29px;
+          line-height: 29px;
+          padding-left: 15px;
+          font-size: 12px;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+        }
+        .symbol-item {
+          padding: 0 15px;
+          line-height: 44px;
+          cursor: pointer;
+          position: relative;
+          .bg {
+              display: none;
+            }
+          &:hover{
+            .bg {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+            }
+          }
+          span {
+            display: inline-block;
+            line-height: 31px;
+            position: relative;
+            .iconMy {
+              position: absolute;
+              top: 0px;
+              left: 0;
+              display: inline-block;
+              vertical-align: middle;
+              width: 15px;
+              height: 15px;
+              float: left;
+              line-height: 34px;
+              svg {
+                margin: 0;
+                font-size: 20px;
+
+              }
+            }
+            .hover_show {
+              display: none;
+            }
+            &:hover {
+             .hover_show {
+                display: inline-block;
+              }
+              .hover_hide {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .td-symbol {
+        width: 30%;
+        position: relative;
+        padding-left: 25px;
+        box-sizing: border-box;
+        // font-size: 14px;
+      }
+      .td-price {
+        width: 35%;
+        user-select: none;
+        text-align: right;
+        cursor: pointer;
+      }
+      .td-rose {
+        user-select: none;
+        width: 35%;
+        text-align: right;
+        cursor: pointer;
+      }
+      .sorte {
+          display: inline-block;
+          float: right;
+          width: 14px;
+          height: 14px;
+          margin-top: 9px;
+        .icon {
+          vertical-align: top;
+        }
+        i {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          left: 0;
+          line-height: 6px;
+          overflow: hidden;
+          em {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all .3s ease-in-out;
+            display: block;
+            border-width: 4px;
+            border-style: solid dashed dashed;
+            border-color: #828ea1 transparent transparent;
+            font-size: 0;
+            line-height: 0;
+            transform: rotate(180deg);
+          }
+          &.icon-triangle-up {
+            bottom: 0;
+            em {
+              transform: rotate(0deg);
+            }
+          }
+        }
+        &.selected {
+          .cur {
+            em {
+              border-color: #EDF4F8 transparent transparent;
+            }
+          }
+        }
+      }
+    }
+    .table-head {
+      padding: 0 15px;
+      overflow: hidden;
+    }
+    .table-body {
+      padding: 5px 0;
+      .table-body-bar {
+        padding: 0;
+      }
+      tr {
+        border: none;
+        cursor: pointer;
+        .store {
+          margin: 0 7px 0 0;
+        }
+        td {
+          overflow: hidden;
+          padding: 0 15px;
+          &:nth-child(2) {
+            padding: 0 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+  // 收缩 样式
+  left-block-shrink(){
+    .ex-market {
+      width: 100px;
+      .search-input{
+        height: 0;
+        width: 0;
+        border: none;
+      }
+      .icon-serach {
+        left: 0;
+      }
+      .table-head {
+        th {
+          &:first-child {
+            text-align: center;
+          }
+          &:nth-child(2),
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+      .table-body {
+        tr {
+          td {
+            &:first-child {
+              padding: 0;
+              text-align: center;
+            }
+            .store,
+            &:nth-child(2),
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+      .market-title {
+        width: 100%;
+        li {
+          display: none;
+          &.selected {
+            display: block;
+            float: none;
+            width: 100%;
+            border: none;
+            padding: 0;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+      .market-title-box {
+        .slide-btn {
+          display: none;
+        }
+      }
+      .market-symbol {
+        position: relative;
+        height: 100%;
+        .thead {
+          padding: 0;
+          span {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            &.td-price {
+              display: none;
+            }
+            &.td-rose {
+              display: none;
+            }
+          }
+        }
+        .tbody {
+          padding: 0 0 5px 0;
+          .block-title {
+            padding: 0;
+            text-align: center;
+          }
+          .symbol-item {
+            padding: 0;
+            span {
+              text-align: center;
+              width: 100%;
+              padding: 0;
+              .icon,
+              &.td-price
+              {
+                display: none;
+              }
+              &.td-rose{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .not-data {
+    text-align: center;
+    padding-top: 80px;
+    p {
+      margin-top: 5px;
+    }
+    .icon {
+      font-size: 36px;
+    }
+  }

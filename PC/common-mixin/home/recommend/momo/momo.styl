@@ -1,0 +1,66 @@
+.inter-recommend.momo-recommend-international {
+    height: 220px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background:#fff;
+    .recommend-ul {
+      // background: red;
+      // margin-left: 50%;
+      // transform: translateX(-50%)
+    }
+    .ulCenter {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top:50px;
+    }
+    .recommend-even {
+      width: 300px;
+      padding: 25px 20px;
+      box-sizing: border-box;
+      float: left;
+      height: 120px;
+      position: relative;
+      cursor: pointer;
+      .bl {
+        height: 70px;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        background:#F6F6F6;
+      }
+      &:first-child{
+        .bl {
+          width: 0
+        }
+      }
+    }
+    .symbol {
+      font-size: 14px;
+      color: #6E738E;
+    }
+    .price {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #31363E;
+    }
+    .volume {
+      font-size: 12px;
+      margin-top: 10px;
+      color: #9A99A5;
+    }
+    .rose {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      font-size: 14px;
+    }
+    .kline {
+      width: 90px;
+      height: 32px;
+      position: absolute;
+      bottom: 36px;
+      right: 20px;
+    }
+  }

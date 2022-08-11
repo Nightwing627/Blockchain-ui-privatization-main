@@ -1,0 +1,293 @@
+
+
+.calculator-mode {
+  .dialog-frame {
+    width: 700px !important;
+    background-color: #fff;
+    .dialog-frame-head {
+      background-color: rgba(167, 180, 203, .2);
+      .dialog-frame-head-text {
+        color:  #16161F;
+      }
+    }
+    .dialog-frame-body {
+      width: 620px !important;
+    }
+  }
+}
+.calculatorMode-box {
+  height: 430px;
+  .category-select-box {
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    .tab {
+      flex: 1;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      &.a-3-bg {
+        background-color: rgba(167, 180, 203, .1);
+        color: #828ea1;
+      }
+      &.u-8-bg {
+        background-color: #1269FF;
+        color: #fff;
+      }
+    }
+  }
+  .form-block {
+    width: 290px;
+    float: left
+    font-size: 12px;
+    .select-price {
+      margin-top: 6px;
+    }
+  }
+  .form-info {
+    width: 290px;
+    float: right;
+    min-height: 320px;
+    margin: 0 0 0;
+    background-color: #fff;
+    .tit {
+      height: 40px;
+      line-height: 40px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      padding-left: 10px;
+      display: flex;
+    }
+    .info-item {
+      margin-bottom: 1px;
+      display: flex;
+      box-sizing: border-box;
+      font-size: 12px;
+      height: 66px;
+      align-items: center;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      p {
+        flex: 1;
+        padding: 10px 0 10px 10px;
+      }
+      .text1 {
+        max-width: 120px; 
+      }
+      .text2 {
+        text-align: right;
+        border-left-width: 1px;
+        border-left-style: solid;
+        padding-right: 10px;
+      }
+    }
+  }
+  .active-lever {
+    line-height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: right;
+    padding: 0 8px;
+    span {
+      float: left;
+    }
+  }
+  .transaction-drag {
+    position relative
+    width calc(100% - 15px)
+    margin-top 15px
+    height 40px
+    .drag-def, .drag-cover {
+      position absolute
+      display block
+      height 4px
+      top 3px
+      left 4px
+    }
+    .drag-def {
+      width 100%
+    }
+    .drag-cover {
+      background #ff00ff
+    }
+    .drag-turnColor {
+      background red
+    }
+    .drag-step {
+      position absolute
+      left 0%
+      display block
+      top -1px
+      border-radius 100px
+      border-width: 2px;
+      border-style: solid;
+      width 12px
+      height 12px
+      cursor pointer
+      z-index 5
+      box-sizing: border-box;
+      &.transition {
+        transition all 0.2s ease
+      }
+      .icon_h {
+        display block
+        height 8px
+        width 3px
+        margin 3px 0 0 5px
+        background none
+        border-left 1px solid #fff
+        border-right 1px solid #fff
+      }
+    }
+    i {
+      // background: #293448;
+      position absolute
+      top 1px
+      display block
+      width 8px
+      height 8px
+      cursor pointer
+      z-index 4
+      text-align right
+      border-width 1px
+      border-style solid
+      border-top none
+      border-bottom none
+      border-radius 50px
+    }
+    .a-6-bd {
+        border-color: #fff;
+      }
+    .a-3-bg {
+      background-color: rgba(167,180,203,0.2);
+    }
+    .c-8-bd {
+      border-color: #1269ff;
+    }
+    .c-8-bg {
+      background-color: #1269ff;
+    }
+    .a-5-bg {
+      background-color: #fff;
+    }
+    i.selected {
+      background $input-focus-border
+    }
+
+    i.drag-step0 {
+      left calc(25% + 4px)
+    }
+    .drag-step-wrap {
+      display inline-block
+      width 100%
+      position relative
+    }
+    .mark {
+      display inline-block
+      width 36px
+      text-align center
+      left -12px
+      top 20px
+      position absolute
+      user-select none
+      font-size: 12px;
+    }
+  }
+  .drag-bar {
+    position: absolute;
+    height: 4px;
+    top: 0;
+    z-index: 1;
+    left: 4px;
+  }
+  .max-can-open {
+    padding: 10px 0;
+  }
+
+  .no-drop {
+    .transaction-drag i, .drag-step.transition {
+      cursor no-drop
+    }
+  }
+   .add-and-sub {
+    height: 40px;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+    border-radius: 2px;
+
+    .label {
+      padding-left: 8px;
+      font-size: 14px;
+      padding-right: 16px;
+      user-select: none;
+    }
+
+    .options {
+      width: 38px;
+      height: 40px;
+    }
+    .add, .sub {
+      display: block;
+      width: 100%;
+      height: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 2px;
+      .hover-show {
+        display: none;
+      }
+      .icon {
+        transform: rotate(90deg);
+      }
+      &:hover {
+        .hover-hide {
+          display: none;
+        }
+        .hover-show {
+          display: block;
+        }
+      }
+    }
+    .add {
+      border-right-width: 0px;
+      border-top-width: 0px;
+      border-bottom-width: 0px;
+
+      .icon {
+        transform: rotate(-90deg);
+      }
+    }
+    .sub {
+      border-right-width: 0px;
+      border-bottom-width: 0px;
+    }
+    .content {
+      flex: 1;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+
+      input {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        text-align: left;
+        user-select: none;
+      }
+    }
+  }
+
+
+
+}

@@ -1,0 +1,231 @@
+.future-canter-echart-box {
+  z-index 9
+  width 100%
+  height 295px
+  position relative
+  .chart-page .chart-container-border{
+    background: none;
+  }
+
+  .kline-bg {
+    position absolute
+    bottom 130px
+    left 15px
+    z-index 999
+
+    .kline-img {
+      max-width calc(100% - 85px)
+    }
+  }
+
+  .mmd-loading-circle-right, .mmd-loading-circle-left {
+    border-color #1baaec
+  }
+
+  .inline {
+    position absolute
+    top 30px
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    z-index 9
+    width 100%
+  }
+
+  .top-menu {
+    line-height 30px
+    font-size 12px
+    padding 0
+    position absolute
+    left 108px
+    right 50px
+    transition all 0.5s ease
+    z-index 9
+    &.lefts {
+      left :0
+    }
+    .top-menu-bar {
+      position relative
+      overflow hidden
+      height 30px
+      width 100%
+
+      .hover_hide {
+        display block
+      }
+
+      .hover_show {
+        display none
+      }
+
+      .slide-btn {
+        position absolute
+        top 0px
+        padding 8px 0
+        z-index 9
+        cursor pointer
+        display none
+
+        &:hover {
+          .hover_show {
+            display block
+          }
+
+          .hover_hide {
+            display none
+          }
+        }
+      }
+
+      .slide-btn-cur {
+        display block
+      }
+
+      .icon-left {
+        left 0
+        padding-right 5px
+      }
+
+      .icon-right {
+        right 0
+        padding-left 5px
+      }
+    }
+
+    .top-menu-box {
+      height 30px
+      overflow hidden
+      width max-content
+      white-space nowrap
+      position absolute
+      top 0
+      left 0
+      transiton left 0.2s linear
+      -webkit-transition left 0.2s linear
+    }
+
+    .time-line {
+      display inline-block
+      padding 0 10px
+      cursor pointer
+      user-select none
+
+      .hoverShow {
+        display none
+      }
+
+      &:hover {
+        .hoverHide {
+          display none
+        }
+
+        .hoverShow {
+          display inline-block
+        }
+      }
+    }
+
+    .full-btn {
+      padding 0 14px
+    }
+    &.hide {
+      opacity 0
+      z-index 1
+    }
+  }
+  .mask-bg {
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .slide {
+    position absolute
+    top 0
+    left 0
+    width 100%
+    opacity 0
+    transition all 0.5s ease
+    overflow hidden
+    height 100%
+    z-index 2
+
+    &.selected {
+      transform translateX(0%)
+      opacity 1
+      z-index 3
+    }
+  }
+
+  .top-tab {
+    position absolute
+    right 0
+    height 30px
+    line-height 30px
+    text-align right
+    z-index 9
+
+    .switch-chart-type {
+      margin-right 5px
+      cursor pointer
+      font-size: 12px
+    }
+  }
+  .tv_chart_container {
+    height 100%
+    width 100%
+  }
+
+  .loading-indicator {
+    background none
+  }
+
+  .coverKlineBox {
+    position absolute
+    top 30px
+    left 0
+    right 0
+    bottom 0
+    z-index 99
+  }
+
+  // 页面动画
+  .fade-enter-active, .fade-leave-active {
+    transition opacity 0.8s
+  }
+
+  .fade-enter, .fade-leave-to {
+    opacity 0
+  }
+
+  .loading {
+    position absolute
+    top 50%
+    left 50%
+    z-index 999
+    margin -25px 0 0 -25px
+  }
+}
+
+.canter-echart-full {
+  object-fit contain
+  position fixed !important
+  top 0px !important
+  right 0px !important
+  bottom 0px !important
+  left 0px !important
+  box-sizing border-box !important
+  min-width 0px !important
+  max-width none !important
+  min-height 0px !important
+  max-height none !important
+  width 100% !important
+  height 100% !important
+  transform none !important
+  margin 0px !important
+}
+@media (max-width: 460px){
+  .ex-canter-echart-box .top-menu{
+    left:75px;
+  }
+}

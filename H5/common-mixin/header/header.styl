@@ -1,0 +1,106 @@
+.common-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  .button-logo {
+    height: 100%;
+    line-height:0.44rem;
+    vertical-align: middle;
+    position: absolute;
+    left: 0.15rem;
+    img {
+      vertical-align: middle;
+      height: 0.18rem;
+    }
+  }
+  .lan-title{
+      position: absolute;
+    right: .15rem;
+    font-size: 0.12rem;
+    line-height: .44rem;
+    color: #fff;
+}
+  .button-menu {
+    position: absolute;
+    right: 0.15rem;
+    font-size: 0.3rem;
+    line-height: 0.34rem;
+  }
+  .slot-bar {
+    height: 100%;
+    padding: 0 0.3rem;
+  }
+  .header-box {
+    position: fixed;
+    left: 0;
+    top: 0.44rem;
+    width: 100%;
+    height: calc(100% - 0.44rem);
+    // height: 100%;
+    overflow-y: scroll;
+    // 主流板块
+    .common-header-linkList {
+      border-top-style: solid;
+      border-top-width: 1px;
+      .button-li {
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding-left: 0.18rem;
+        .header-button-links  {
+          font-size: 14px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .header-guide {
+      padding: 0.3rem 0;
+      .common-button {
+        margin-left: 0.2rem;
+      }
+    }
+  }
+  &.header-fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+.headerbox-fade-enter-active {
+  transition: all .4s ease;
+}
+.headerbox-fade-leave-active {
+  transition: all .4s ease;
+}
+.headerbox-fade-enter, .headerbox-fade-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+// 修改主题
+.setBox {
+  padding: 10px 0 0 0;
+  .setColor-key {
+    float: left;
+    width: 100px;
+    font-size: 14px;
+  }
+  .setColor-value {
+    float: left;
+    width: 300px;
+    li {
+      display: inline-block;
+      margin-left: 50px;
+      margin-top: 20px;
+      &:nth-child(1), &:nth-child(2) {
+        margin-top: 0px;
+      }
+      span {
+        margin-left: 8px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+    }
+  }
+}

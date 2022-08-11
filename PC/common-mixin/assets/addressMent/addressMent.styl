@@ -1,0 +1,179 @@
+.page-addressMent {
+  .input_line_prompt {
+    z-index: 10!important;
+  }
+  .mainChain-page-icon {
+    // line-height: 28px;
+    cursor pointer
+    display inline-block
+    position relative
+
+    &:hover {
+      .mainChain-page-market {
+        display block;
+        li {
+          word-break: break-all
+          font-size: 12px;
+          line-height: 16px;
+          margin-bottom: 4px;
+        }
+        .warn {
+          margin-top: 10px
+        }
+      }
+    }
+
+    .mainChain-page-market {
+      word-break: break-all
+      box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+      display none
+      position absolute
+      top 14px
+      width 320px
+      padding 20px
+      left 0
+      box-sizing border-box
+      font-family PingFangSC-Regular
+      font-size 12px
+      letter-spacing 0
+      line-height 20px
+      z-index 10
+    }
+  }
+  .mainChain-title {
+    // font-size 12px
+    line-height 12px
+    display: inline-block;
+    .icon-14 {
+      font-size 12px
+    }
+    span {
+      margin-right 7px
+    }
+  }
+  .add-text{
+    padding-top 16px
+    padding-bottom 16px
+    .text{
+      float left
+      word-break: break-all;
+      width 80%
+    }
+    .icon-btn{
+      float left
+    }
+  }
+  .icon-btn {
+    margin-left: 0 !important;
+    margin-right: 5px;
+    cursor: auto !important;
+  }
+  .addressMent-header {
+    height: 55px;
+    line-height: 55px;
+    padding-left: 20px;
+    font-size: 14px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+    .header-select {
+      width: 120px;
+      position: absolute;
+      right: 20px;
+      top: 9px;;
+    }
+  }
+  .addressBox {
+    // padding: 28px 40px;
+    padding: 40px 20px 42px 20px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    position: relative;
+    .addressBox-left {
+      min-width:524px;
+      &.autoW{
+        width:auto;
+      }
+    }
+    .addressBox-right {
+      position: absolute;
+      right: 20px;
+      bottom: 42px;
+    }
+    .addressBox-select {
+      width: 120px;
+      float: left;
+    }
+    .addressBox-address {
+      width: 380px;
+      margin-left: 24px;
+      float: left;
+    }
+    .addressBox-remarks,
+    .addressBox-pages {
+      width: 250px;
+      float: left;
+      margin: 0;
+    }
+    .addressBox-remarks{
+      margin-top:14px;
+    }
+    .addressBox-pages {
+      margin-top:14px;
+      margin-right: 24px;
+      margin-left: 25px;
+      .addressBox-page-icon {
+        line-height: 28px;
+        cursor: pointer;
+        &:hover {
+          .addressBox-page-market {
+            display: block;
+          }
+        }
+        .addressBox-page-market {
+          display: none;
+          position: absolute;
+          top: 28px;
+          width: 340px;
+          padding: 20px;
+          right: -5px;
+          box-sizing: border-box;
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 20px;
+          z-index 99;
+        }
+      }
+    }
+  }
+  .addressMent-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0 !important;
+    }
+  }
+  .addressTag{
+    .input_line_inp{
+      padding-right 24px
+    }
+  }
+}
+// 国际版
+.Int {
+  .page-addressMent {
+    width: 940px;
+    margin: 0 auto;
+    .addressBox {
+      padding: 40px 0 40px 0;
+      border: none;
+    }
+    .addressMent-table,
+    .addressMent-header,
+    .flowingWater-options {
+      padding: 0;
+    }
+  }
+}

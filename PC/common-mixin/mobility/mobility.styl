@@ -1,0 +1,157 @@
+.page-mobility.page-mobility-container {
+  width: 1180px;
+  min-height: 800px;
+  margin: 30px auto 0 auto;
+  box-sizing: border-box;
+  .mobility-sideNav {
+    height: 72px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-left: 60px;
+    padding-top: 31px;
+    box-sizing: border-box;
+    position: relative
+    .sideNav-warn {
+      position: absolute;
+      right: 60px;
+      font-size: 12px;
+      bottom: 6px;
+      line-height: 18px;
+    }
+    .sideNav-page-icon {
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        .sideNav-page-market {
+          display: block;
+        }
+      }
+      .sideNav-page-market {
+        display: none;
+        position: absolute;
+        top: 28px;
+        width: 340px;
+        padding: 20px;
+        right: 0;
+        box-sizing: border-box;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 20px;
+        z-index: 4
+      }
+    }
+  }
+  .mobility-content {
+    padding-left: 60px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    .mobility-content-coin {
+      float: left;
+      width: 180px;
+    }
+    .mobility-content-legal {
+      float: left;
+      width: 180px;
+      margin-left: 20px;
+    }
+    .mobility-content-inputValue {
+      margin-top: 40px;
+      width: 380px;
+      position: relative;
+      .mobility-tradeType {
+        font-size: 12px;
+        position: absolute;
+        z-index: 4;
+        top: 2px;
+      }
+      .mobility-tradeType-even {
+        cursor: pointer!important;
+      }
+      .mobility-tradeType-line {
+        margin: 0 5px;
+      }
+      .inputCoin {
+        line-height: 30px;
+        font-size: 12px;
+        vertical-align: middle;
+      }
+      .btnAll {
+        vertical-align: middle;
+      }
+    }
+    .mobility-content-pays {
+      margin-top: 16px;
+      .pays-Title {
+        font-size: 12px;
+        position: relative;
+        width: 380px;
+        .addBtn {
+          position: absolute;
+          right: 0;
+          top: -6px;
+        }
+      }
+      .buy-pays-list {
+        margin-top: 10px;
+        li {
+          border-width: 1px;
+          border-style: solid;
+          cursor: pointer;
+          float: left;
+          width: 110px;
+          text-align: center;
+          height: 40px;
+          box-sizing: border-box;
+          line-height: 40px;
+          margin-right: 20px;
+          border-radius: 2px;
+          position: relative;
+          .activeIcon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+      .sell-pays-add {
+        margin-top: 20px;
+      }
+      .sell-pays-list {
+        li {
+          margin-top: 20px;
+          .sell-pays-title {
+            margin-left: 10px;
+            cursor: pointer;
+          }
+          .sell-pays-message {
+            margin-left: 26px;
+            margin-top: 6px;
+            max-width: 354px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    .mobility-message {
+      margin-top: 40px;
+      width: 380px;
+      li {
+        line-height: 20px;
+        margin-bottom: 20px;
+        .key {
+          font-size: 12px;
+          float: left
+        }
+        .value {
+          float: right;
+        }
+      }
+    }
+    .mobility-warn {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  }
+}

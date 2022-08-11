@@ -1,0 +1,108 @@
+.page-otcAccount {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .otcAccount-title {
+    height: 0.5rem;
+    padding: 0 0.15rem;
+  }
+  .hide {
+      float: right;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 0.15rem;
+      line-height: 0.5rem;
+      display: flex;
+      align-items: center;
+      .hodetext {
+        display: inline-block;
+        margin-left: 0.08rem;
+        font-size: 0.12rem;
+        max-width: 0.8rem;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap
+      }
+    }
+    .find {
+      float: left;
+      vertical-align: middle;
+      display: inline-block;
+      .findClass {
+        margin-top: 0.12rem;
+      }
+    }
+  .table-body-bar {
+    .coinBox {
+      display: inline-block;
+      height: 55px;
+      position: relative;
+      margin-left: 0!important;
+      width: 58px;
+      .coinIcon {
+        position: absolute;
+        height: 55px;
+        // padding-top: 5px;
+        width: 100%;
+        top: 1px;
+        img {
+          position: absolute;
+          top: 9px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+    tr:last-child {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+  }
+  .switchWrap {display: inline-block;}
+
+  .otcAccount-center {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar {
+      padding: 0!important;
+    }
+  }
+  .transfer-box {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    .transfer-content {
+      // width: 400px;
+      height: 70px;
+      margin-bottom: 23px;
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.15rem;
+      li {
+        float: left;
+      }
+      .transfer-page {
+        // width: 160px;
+        // padding-left: 15px;
+        height: 70px;
+      }
+      .transfer-page-side {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 13px;
+      }
+      .transfer-page-name {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      .transfer-icon {
+        // width: 50px;
+        height: 70px;
+        line-height: 85px;
+        text-align: center;
+        .icon { cursor: pointer }
+      }
+    }
+  }
+}

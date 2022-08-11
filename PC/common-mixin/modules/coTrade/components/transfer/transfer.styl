@@ -1,0 +1,83 @@
+.transfer-window {
+  .coin-box {
+    height: 70px;
+    display: flex;
+    padding: 0px 16px;
+    align-items: center;
+
+    >span {
+      margin-right: 28px;
+    }
+  }
+
+  .ways {
+    height: 70px;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    position: relative;
+
+    .account {
+      position: absolute;
+      top: 20px;
+      transition: all 1s;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .transfer-icon {
+      cursor: pointer;
+    }
+  }
+
+  .transfer-vol {
+    margin-top: 30px;
+
+    .right {
+      font-size: 12px;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+  }
+
+  .can-transfer {
+    margin-top: 5px;
+    font-size: 12px;
+    position: relative;
+
+    .bonus-vol {
+      cursor: pointer;
+
+      &:hover {
+        +.bonus-hint {
+          display: block;
+        }
+      }
+
+      >a {
+        border-bottom-style: dashed;
+        border-bottom-width: 1px;
+        cursor: pointer;
+      }
+    }
+
+    .bonus-hint {
+      display: none;
+      position: absolute;
+      top: 20px;
+      left: 0px;
+      padding: 10px;
+      z-index: 1000;
+      line-height: 1.8;
+    }
+  }
+}

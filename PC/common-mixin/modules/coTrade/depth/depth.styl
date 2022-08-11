@@ -1,0 +1,164 @@
+.codepath-container {
+  .coDepth {
+    position relative
+    overflow hidden
+  }
+  .block-header {
+    height 57px
+    line-height 57px
+    padding-left 19px
+    padding-right 19px
+    box-sizing border-box
+    font-size 14px
+  }
+  .tab-item {
+    display: none;
+    margin-bottom: 5px;
+    .block-header {
+      display: none;
+    }
+    &.is-show {
+      display: block;
+    }
+  }
+  .current-price {
+    height 65px
+    line-height 65px
+    padding 0 15px
+    font-size 12px
+    margin-top 0
+    border-top 1px solid RGB(228, 228, 228)
+    border-bottom 1px solid RGB(228, 228, 228)
+    .price-box {
+      height 65px
+      line-height 65px
+      font-size 12px
+      span {
+        vertical-align middle
+        min-width: 100px;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+      .price {
+        margin-right 10px
+      }
+      .indexPrice {
+        font-size: 14px;
+        margin-right 15px
+      }
+      .tagPrice {
+        i {
+          color: #828ea1;
+        }
+      }
+    }
+    .jb {
+      margin-left 10px
+      display inline-block
+      float right
+      i {
+        vertical-align middle
+        display inline-block
+        width 6px
+        margin-right 3px
+        height 14px
+        border-width 1px
+        border-style solid
+        border-radius 2px
+      }
+    }
+  }
+  .title-tab {
+    .tab {
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+      margin-right: 28px;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(22, 22, 31) !important;
+      &.a-12-bd {
+      }
+    }
+    .tab-rtwo {
+      margin: 0;
+    }
+  }
+  .depath-class {
+    float: right;
+    position: relative;
+    padding: 0 0 0 0;
+    cursor pointer
+    span {
+      user-select none
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 39px;
+      right: 0;
+      min-width: 80px;
+      text-align: right;
+      z-index: 99;
+      box-shadow: 0 1px 6px 1px #e5ebf5;
+      li {
+        height: 24px;
+        line-height: 24px;
+        padding: 0 10px; 
+        cursor pointer
+        margin-bottom: 1px;
+        &.a-3-bg {
+          background-color: rgba(167, 180, 203, .1);
+        }
+        &.b-1-cl {
+          color: #16161F;
+        }
+      }
+    }
+    .hoverShow {
+      display: none;
+    }
+    &:hover {
+      .hoverHide {
+        display: none;
+      }
+      .hoverShow {
+        display: block;
+      }
+      ul {
+        display: block;
+      }
+    }
+  }
+  // 如果宽度大于 1820px
+  @media screen and (min-width: 1820px){
+    .title-tab {
+      display: none;
+    }
+    .tab-item {
+      display: block
+      .block-header {
+        display: block;
+      }
+    }
+  }
+  .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent !important;
+      border-right: 6px solid transparent !important;
+      border-top-width: 5px;
+      border-top-style: solid;
+      margin: 0;
+      vertical-align: middle;
+      padding: 0;
+      display: inline-block;
+    }
+  .__rail-is-vertical, .__bar-is-vertical {
+    background-color: #fff !important;
+  }
+  .__rail-is-horizontal, .__bar-is-horizontal {
+    background-color: #fff !important;
+  }
+}
+

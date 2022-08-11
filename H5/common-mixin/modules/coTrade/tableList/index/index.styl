@@ -1,0 +1,126 @@
+.trade-tableList{
+  .thead {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 12px;
+    span {
+      display: inline-block;
+    }
+  }
+  .tbody {
+    padding: 0 0 0.05rem;
+    position: relative;
+    font-size: 12px;
+    transiton: height .5s ease;
+    width: 100%;
+    -webkit-transition: height .5s ease;
+    &.no-padding {
+      padding: 0;
+    }
+    .symbol-item {
+      padding: 0 0.15rem 0 0;
+      line-height: 16px;
+      cursor: pointer;
+      position: relative;
+      .bg {
+        display: none;
+      }
+      &.change-item {
+        .change {
+          position: absolute;
+          animation: 1s opacity2 0s 1;
+          top: 0;
+          left: 2px;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+        }
+      }
+      &:hover{
+        .bg {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @keyframes opacity2{
+    0%{opacity:1}
+    100%{opacity:0;}
+  }
+  @-webkit-keyframes opacity2{
+    0%{opacity:1}
+    100%{opacity:0;}
+  }
+  @-moz-keyframes opacity2{
+    0%{opacity:1}
+    100%{opacity:0;}
+  }
+  .asksOPtion {
+    // position: absolute;
+    bottom: 0;
+  }
+  .thead, .tbody {
+    span {
+      display: inline-block;
+      text-align: right;
+      position: relative;
+      z-index: 9;
+      .icon {
+        display: inline-block;
+        vertical-align: middle;
+        height: 15px;
+        float: left;
+        margin: 8px 5px 0 0;
+      }
+      .hover_show {
+        display: none;
+      }
+      &:hover {
+        .hover_show {
+          display: block;
+        }
+        .hover_hide {
+          display: none;
+        }
+      }
+      &.td-symbol,
+      &.td-symbol0 {
+        text-align: left;
+        padding-left: 0.15rem;
+      }
+      &.td-symbol2 {
+        float: right;
+        padding-right: 0.15rem;
+      }
+      &.td-rose {
+        float: right;
+      }
+    }
+  }
+  .tr-bg {
+    position: absolute;
+    height: 15px;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    padding: 0;
+    width: 10%;
+    transiton: width .5s ease;
+    -webkit-transition: width .5s ease;
+  }
+  // 国际版
+  .Int-contract-content {
+    .asksOPtion {
+      position: initial;
+    }
+    .tbodyBar {
+      overflow: initial !important;
+    }
+  }
+}

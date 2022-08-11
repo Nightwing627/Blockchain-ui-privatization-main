@@ -1,0 +1,125 @@
+.newTrade {
+  width: 100%;
+  // margin-top: 1px;
+  .block-header {
+    height: 39px;
+    line-height: 39px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .trade-shrinks  {
+    .block-header {
+      display: none;
+    }
+  }
+  .thead {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding: 0 0.15rem 0;
+    font-size: 12px;
+    span {
+      display: inline-block;
+    }
+  }
+  .tbody {
+    padding: 5px 0 5px;
+    font-size: 12px;
+    transiton: height .5s ease;
+    -webkit-transition: height .5s ease;
+    &.no-padding {
+      padding: 0;
+    }
+    .symbol-item {
+      padding: 0 0.15rem 0;
+      line-height: 26px;
+      cursor: pointer;
+      position: relative;
+      .bg {
+        display: none;
+      }
+      &:hover{
+        .bg {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &.change-item {
+        .change {
+          position: absolute;
+          animation: 2s opacityZ 0s 1;
+          top: 2px;
+          left: 0;
+          height: 80%;
+          width: 100%;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  @keyframes opacityZ{
+    0%{opacity:1}
+    100%{opacity:0;}
+  }
+  @-webkit-keyframes opacityZ{
+    0%{opacity:1}
+    100%{opacity:0;}
+  }
+  @-moz-keyframes opacityZ{
+    0%{opacity:1}
+    100%{opacity:0;}
+  }
+  .thead, .tbody {
+    span {
+      display: inline-block;
+      text-align: right;
+      position: relative;
+      .icon {
+        display: inline-block;
+        vertical-align: middle;
+        height: 15px;
+        background: #f00;
+        float: left;
+        margin: 8px 5px 0 0;
+      }
+      .hover_show {
+        display: none;
+      }
+      &:hover {
+        .hover_show {
+          display: block;
+        }
+        .hover_hide {
+          display: none;
+        }
+      }
+      &.td-symbol,
+      &.td-symbol0 {
+        text-align: left;
+      }
+      &.td-symbol2,
+      &.td-rose {
+        float: right;
+      }
+    }
+  }
+  .tr-bg {
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .16;
+    padding: 0;
+    width: 10%;
+    transiton: width .5s ease;
+    -webkit-transition: width .5s ease;
+  }
+  .newTrade-tbody {
+    // height: 819px;
+    overflow: auto;
+  }
+}

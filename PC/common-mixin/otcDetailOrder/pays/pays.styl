@@ -1,0 +1,66 @@
+.otcDetailOrder-pays {
+  min-height: 200px;
+  .otcDetailOrder-pays-title {
+    font-size: 14px;
+    float: left
+  }
+  .otcDetailOrder-pays-body {
+    margin-left: 40px;
+    float: left
+  }
+  .text {
+    font-size: 14px;
+  }
+  .paysList {
+    li {
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .paysList-redio {
+      float: left;
+      margin-right: 10px;
+    }
+    .paysList-message {
+      float: left;
+      font-size: 14px;
+    }
+    .paysList-message-type {
+      margin-bottom: 6px;
+      vertical-align: middle;
+    }
+    .paysList-message-text, .paysList-message-bank {
+      max-width: 500px;
+      display: inline-block;
+      word-wrap: break-word;
+      line-height: 20px;
+    }
+    .paysList-message-ewm {
+      margin-left: 10px;
+      cursor: pointer;
+      vertical-align: middle;
+      position: relative;
+      &:hover {
+        .paysList-message-ewm-mark {
+          display: block;
+          z-index: 2;
+        }
+      }
+      .paysList-message-ewm-mark {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        padding: 5px;
+        border-radius: 2px;
+        display: none;
+        img {
+          // width: 120px;
+          max-width: 138px;
+          max-height: 210px;
+          display: block;
+        }
+      }
+    }
+  }
+}

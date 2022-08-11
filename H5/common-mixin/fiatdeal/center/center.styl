@@ -1,0 +1,201 @@
+.fiatdeal-center{
+  width: 100%;
+  .alertText {
+    line-height: 0.2rem;
+  }
+  .table-extend {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    margin-top: 0.1rem;
+    .payments-list {
+      display: flex;
+      img {
+        width: 0.14rem;
+        height: 0.14rem;
+        display: block;
+      }
+    }
+    .payments-list-li {
+      width: 0.2rem;
+      height: 0.2rem;
+      margin-right: 0.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: 0.02rem;
+    }
+  }
+  .center-management-center{
+    .center-sideNav {
+      height: 40px;
+      width: 100%;
+      padding: 0 0.18rem;
+      box-sizing: border-box;
+    }
+    .center-header{
+      width: 100%;
+      margin-top: 1px;
+      padding: 0 0.15rem;
+      box-sizing: border-box;
+      min-height: 0.55rem;
+      // float: left;
+      // padding: 40px 20px 0 20px;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      .mobility-select {
+        padding: 8px 0 10px 0;
+        .mobility-select-even {
+          display: inline-block;
+          border-width: 1px;
+          border-style: solid;
+          padding: 9px 12px;
+          border-radius: 8px;
+          font-size: 12px;
+          position: relative;
+        }
+      }
+      .mobility-select-first {
+        .mobility-select-even {
+          &:first-child {
+            z-index: 1;
+          }
+          &:last-child {
+            margin-left: -6px;
+            border-radius: 0px 8px 8px 0px;
+          }
+        }
+      }
+      .mobility-select-last {
+        .mobility-select-even {
+          &:first-child {
+            border-radius: 8px 0px 0px 8px;
+          }
+          &:last-child {
+            margin-left: -6px;
+          }
+        }
+      }
+      .center-header-left{
+        float: left;
+        width: 50%;
+        border-right-width: .01rem;
+        border-right-style: solid;
+        margin-top: 0.1rem;
+        // margin-bottom: 32px;
+        .title{
+          font-size: 14px;
+        }
+        .data-main{
+          // margin: 10px 0;
+          font-size: 0.16rem;
+          span{
+            font-size: 14px;
+          }
+        }
+        .text{
+          font-size: 0.12rem;
+          margin-top: 0.04rem;
+        }
+      }
+      .center-header-right{
+        width: 1.2rem;
+        float: right;
+        height: 0.5rem;
+        position: relative;
+        margin-top: 0.05rem
+      }
+    }
+    .center-main{
+      margin-top: 0.2rem;
+      width: 100%;
+      padding: 0 0.15rem;
+      box-sizing: border-box;
+      .center-main-select {
+
+        display: flex;
+        justify-content: space-between;
+        .select {
+          width: 1.08rem;
+          // margin:30px 0 0 20px;
+        }
+      }
+      .table-body td .icon-btn{
+        margin-left: 0;
+      }
+    }
+  }
+  .merchants{
+    // width: 200px;
+    display: flex;
+    .merchants-left{
+      width: 30px;
+      height:30px;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 10px;
+      margin-top: 2px;
+      span{
+        position: absolute;
+        width:30px;
+        height:30px;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        line-height: 30px;
+        text-align: center;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      i.i{
+        width:6px;
+        height:6px;
+        position: absolute;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px;
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .merchants-right{
+      font-size: 14px;
+      max-width: 2rem;
+      p{
+        line-height: 30px;
+      }
+    }
+  }
+  .tradingV {
+    font-size: 12px;
+  }
+  .payments-ul{
+    width:100%
+    ul{
+      float: right;
+      li{
+        float: right;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        border-radius: 2px;
+        img{
+          width: 16px;
+          height: 16px;
+          margin: 4px;
+        }
+      }
+    }
+  }
+  .table-head{
+    padding:0;
+    margin: 0 20px;
+  }
+}

@@ -1,0 +1,61 @@
+.mainChain {
+  position relative;
+  &.showToast {
+    .mainChain-page-market {
+      display block;
+      li {
+        word-break: break-all
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 4px;
+      }
+      .warn {
+        margin-top: 10px
+      }
+    }
+  }
+  .mainChain-page-market {
+    word-break: break-all
+    box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+    display none
+    position absolute
+    top 20px
+    width 100%
+    padding 20px 20px 15px 20px
+    left 0
+    box-sizing border-box
+    font-family PingFangSC-Regular
+    font-size 12px
+    letter-spacing 0
+    line-height 20px
+    z-index 4
+  }
+  .mainChain-page-icon {
+    // line-height: 28px;
+    cursor pointer
+    display inline-block
+    position relative
+  }
+  .mainChain-title {
+    font-size 14px
+    line-height 12px
+
+    span {
+      margin-right 7px
+    }
+  }
+
+  .branchList {
+    margin-top 10px
+
+    li {
+      float left
+      font-size 12px
+      height 24px
+      padding 0 20px
+      cursor pointer
+      line-height 24px
+      border-radius 2px
+    }
+  }
+}

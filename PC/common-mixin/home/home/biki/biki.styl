@@ -1,0 +1,61 @@
+.internationalHome.biki-home-container {
+  // 公告样式
+  .bulletinBoard {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    .backgrounds {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .bull-bar {
+      .notice-item {
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 40px;
+        height: 40px;
+        .hoverShow {
+          display: none;
+        }
+        .hoverHide {
+          display: inline-block;
+        }
+        i {
+          margin-left: 20px;
+          display: inline-block;
+        }
+        &:last-child {
+          i {
+            display: none;
+          }
+        }
+        &:hover {
+          .hoverShow {
+            display: inline-block;
+          }
+          .hoverHide {
+            display: none;
+          }
+        }
+      }
+    }
+    .more {
+      position: absolute;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      text-align: right;
+      right: 20px;
+      top: 7px;
+    }
+  }
+}

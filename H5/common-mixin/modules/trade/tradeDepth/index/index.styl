@@ -1,0 +1,132 @@
+#ex-tradeDepth {
+  .td-rose {
+    display: none!important;
+  }
+  .td-price, .td-symbol, .td-symbol1, .td-symbol0 {
+    width: 50%!important;
+    box-sizing: border-box;
+  }
+  .td-symbol, .td-symbol0 {
+    padding-left: 0px!important;
+  }
+  .td-symbol1 {
+    padding-right: 0.15rem;
+  }
+  .symbol-item {
+    line-height: 22px!important;
+    height: 22px;
+  }
+  .tr-bg {
+    height: 0.22rem!important;
+    bottom: 0!important;
+    top: -0.005rem!important;
+    right: 0!important;
+    // top: -1.5px!important;
+    left: initial!important;
+  }
+}
+.depthSelect {
+  .selectList {
+    right: 0;
+    bottom: 0.2rem;
+    z-index: 99 !important;
+  }
+}
+
+.ex-depth-block {
+  padding-left: 15px;
+  .depthSelect {
+    float: right;
+    margin: 10px 15px 10px 0;
+  }
+}
+  .depth {
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .block-header {
+    height: 0.39rem;
+    line-height: 0.38rem;
+    padding: 0 0.07rem 0 0.15rem;
+    font-size: 14px;
+    margin-top: 1px;
+  }
+  .current-price {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    // padding: 0 0.15rem;
+    font-size: 12px;
+    margin-top: -0.05rem;
+    .price {
+      float: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 95%;
+      .sy-price {
+        margin-right: 5px;
+        font-size: 14px;
+      }
+    }
+    .depth-type {
+      float: right;
+      .num {
+        font-size: 12px;
+      }
+      .switch-type-btn {
+        line-height: 15px;
+        display: inline-block;
+        float: right;
+        margin: 13px 0 0 5px;
+        border-right: none;
+        .icon-switch {
+          float: left;
+          width: 14px;
+          height: 14px;
+          margin-left: 2px;
+          text-align: center;
+          cursor: pointer;
+          .hoverShow {
+            display: none;
+          }
+          &:hover {
+            .hoverHide {
+              display: none;
+            }
+            .hoverShow {
+              display: inline-block;
+            }
+          }
+        }
+        .noclick {
+          cursor: auto;
+        }
+      }
+    }
+  }
+  .switch-btn {
+    float: right;
+    .dtIcon {
+      font-size: 16px;
+      margin-left: 5px;
+      cursor: pointer;
+      display: inline-block;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      border-radius: 50%;
+      width: 36px;
+    }
+  }
+  .h4 {
+    display: inlin;
+  }
+  .title-tab {
+    margin-right: 30px;
+    display: none;
+    &.title-new-tab {
+      display: none;
+    }
+  }

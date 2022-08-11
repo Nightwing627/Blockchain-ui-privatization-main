@@ -1,0 +1,92 @@
+.inter-recommend.inter-recommend-international {
+    height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    .recommend-ul {
+      // background: red;
+      // margin-left: 50%;
+      // transform: translateX(-50%)
+    }
+    .ulCenter {
+      margin-left: 50%;
+      transform: translateX(-50%)
+    }
+    .recommend-even {
+      width: 310px;
+      padding: 25px 20px;
+      box-sizing: border-box;
+      float: left;
+      height: 120px;
+      position: relative;
+      cursor: pointer;
+      .bl {
+        height: 70px;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        top: 25px;
+      }
+      &:first-child{
+        .bl {
+          width: 0
+        }
+      }
+    }
+    .symbol {
+      font-size: 14px;
+      position relative
+      display inline-block
+      .coin-label {
+        position:absolute;
+        right:-6px;
+        transform:translateX(100%);
+        top:-9px;
+        white-space:nowrap;
+        display:inline-block;
+        font-size:12px;
+        font-weight:400;
+        padding:0 4px;
+        border-radius:2px;
+        line-height:17px;
+        .coin-label {
+          position: relative;
+          z-index: 1;
+          margin: 0;
+          padding: 0;
+        }
+        .coin-bg {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0.2;
+        }
+      }
+    }
+    .price {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+    .volume {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .rose {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      font-size: 14px;
+    }
+    .kline {
+      width: 90px;
+      height: 32px;
+      position: absolute;
+      bottom: 36px;
+      right: 20px;
+    }
+  }

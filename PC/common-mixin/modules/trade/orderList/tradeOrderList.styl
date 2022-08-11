@@ -1,0 +1,91 @@
+.order-list-box {
+    margin-top: 5px;
+    width: 100%;
+    position: relative;
+    .order-conent {
+      width: 100%;
+      position: relative;
+      .common-table,
+      .tab-box {
+        min-width: 1200px;
+      }
+      .table-body .table-body-bar {
+        &.b-1-cl {
+          color: #16161f;
+        }
+        tr.a-3-bd {
+          border-color: #fff;
+        }
+        tr .sub-table.a-5-bg {
+          background-color: #fff;
+        }
+      }
+    }
+    .notData {
+      position: absolute;
+      top: 71px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 80px;
+      text-align: center;
+      font-size: 12px;
+      p {
+        margin-top: 5px;
+      }
+      .icon {
+        font-size: 36px;
+      }
+    }
+  }
+  .trade-content {
+    .table-body .notShowe {
+      display: none;
+    }
+    .table-body .marketPriceOrder {
+     display: none;
+    }
+    .table-body {
+      min-height: 300px;
+    }
+  }
+  .tab-box {
+    height: 38px;
+    line-height: 38px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0 15px;
+    .tab-item {
+      font-size: 14px;
+      margin-right: 45px;
+      display: inline-block;
+      cursor: pointer;
+      height: 37px;
+      &.selected {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+      }
+    }
+    .all-order-btn {
+      float: right;
+      cursor: pointer;
+
+    }
+  }
+  .opera {
+    div {
+      padding-right: 10px;
+    }
+  }
+  // 国际版
+  .Int-trade {
+    .order-list-box {
+      height: 400px;
+      .order-conent {
+        height: 350px;
+      }
+      .table-head {
+        padding: 0 20px;
+      }
+    }
+  }

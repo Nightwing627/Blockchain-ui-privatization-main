@@ -1,0 +1,37 @@
+.trade-content {
+  position: relative;
+
+  .left-block {
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+
+  .main-block {
+    height: 900px;
+    padding: 0 650px 0 305px;
+  }
+
+  .right-block {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 645px;
+    overflow: hidden;
+  }
+}
+
+.market-fade-enter-active {
+  transition: all 0.4s ease;
+}
+
+.market-fade-leave-active {
+  transition: all 0.4s ease;
+}
+
+.market-fade-enter, .market-fade-leave-to, {
+  transform: translateY(-100%);
+  opacity: 0;
+}

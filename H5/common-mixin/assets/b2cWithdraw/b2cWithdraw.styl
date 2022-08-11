@@ -1,0 +1,149 @@
+.page-b2cWithdraw {
+  .addressBox-page-icon {
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      .addressBox-page-market {
+        display: block;
+      }
+    }
+    .addressBox-page-market {
+      display: none;
+      position: absolute;
+      top: 28px;
+      width: 340px;
+      padding: 20px;
+      right: 0;
+      box-sizing: border-box;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      z-index: 4
+    }
+  }
+  .withdraw-header {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.15rem;
+    font-size: 0.14rem;
+  }
+  .goAddress {
+    // font-size: 12px;
+    // margin-left: 20px;
+    cursor: pointer
+    width: 100%;
+    text-align: center;
+    display: block;
+    height: 0.4rem;
+    line-height: 0.4rem;
+  }
+  .withdraw-details {
+    padding: 0.15rem;
+    .details-left {
+      // float: left;
+    }
+    .details-right {
+      // float: right;
+      // width: 3.25rem;
+      // 57-44=13  28-13=15
+      margin-top: 0.2rem;
+      .in-text {
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+    }
+    .symbol {
+      display: flex;
+      justify-content: space-between;
+      .coin {
+        font-size: 0.14rem;
+        line-height: 0.32rem;
+      }
+      .link {
+        font-size: 0.12rem;
+        line-height: 0.32rem;
+      }
+    }
+    .numberList {
+      margin: 0.1rem 0;
+      font-size: 0.12rem;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        // float: left;
+      }
+      li {
+        margin-bottom: 4px
+      }
+      .numberList-key {
+        line-height: 20px;
+        li { text-align: end; }
+      }
+      .numberList-value {
+        line-height: 20px;
+        margin-left: 20px;
+        text-align: right;
+      }
+      .numberList-last {
+        margin-left: 64px;
+      }
+    }
+    .ServiceSpk {
+      font-size: 12px;
+      line-height: 30px;
+      padding-right: 5px;
+    }
+    .details-limit {
+      margin-top: 30px;
+      font-size: 12px;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    .details-warking {
+      margin-top: 37px;
+      font-size: 12px;
+      width: 380px;
+      line-height: 18px;
+      .dayMax{
+        margin-left:28px;
+        margin-top:10px;
+      }
+      .details-warking-icon {
+        float: left;
+        margin-right: 10px;
+      }
+
+      .details-warking-text {
+        float: left;
+        display: inline-block;
+        max-width: 350px;
+        line-height: 18px;
+        word-wrap:break-word;
+      }
+    }
+  }
+  .withdraw-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0!important;
+    }
+  }
+  .warning {
+    margin-top: 0.16rem;
+    .warning-title {
+      font-size: 0.12rem;
+      line-height: 0.2rem;
+    }
+    .warning-list {
+      margin-top: 0.1rem;
+      font-size: 0.12rem;
+      line-height: 0.22rem;
+    }
+  }
+}
+

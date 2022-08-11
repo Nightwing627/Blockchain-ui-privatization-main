@@ -1,0 +1,86 @@
+.pageTitle-exTrade {
+  // width: 100%;
+  position: relative;
+  .eft-box-icon {
+    margin-right: 5px;
+    &:hover {
+      &+.page-market {
+        display: block;
+      }
+    }
+  }
+  height: 0.44rem;
+  text-align: center;
+  line-height: 0.44rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-content{
+    position: relative;
+    .showText {
+      max-width: 1.6rem;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      font-size: 0.16rem;
+      float:left;
+    }
+    .coin-label {
+        position:absolute;
+        right:12px;
+        transform:translateX(100%);
+        top:0px;
+        white-space:nowrap;
+        display:inline-block;
+        font-size:12px;
+        font-weight:400;
+        padding:0 4px;
+        border-radius:2px;
+        line-height:17px;
+        overflow: hidden;
+        .coin-text {
+          position: relative;
+          z-index: 1;
+          margin: 0;
+          padding: 0;
+        }
+        .coin-bg {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0.2;
+        }
+      }
+  } 
+  .page-market {
+    display: none;
+    &:hover {
+      display: block
+    }
+    position: absolute;
+    // top: 75px;
+    top: 40px;
+    width: 100vw;
+    padding: 20px;
+    // right: -5px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: left;
+    z-index 99;
+    box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+    .page-market-even {
+      margin-bottom: 15px;
+    }
+    .page-market-click {
+      cursor: pointer;
+      margin-top: 5px;
+    }
+  }
+}

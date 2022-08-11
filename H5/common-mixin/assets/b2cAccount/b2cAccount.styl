@@ -1,0 +1,138 @@
+.page-b2cAccount {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .table-body-bar {
+    .coinBox {
+      display: inline-block;
+      height: 55px;
+      position: relative;
+      margin-left: 0!important;
+      width: 58px;
+      .coinIcon {
+        position: absolute;
+        height: 55px;
+        // padding-top: 5px;
+        width: 100%;
+        top: 1px;
+        img {
+          position: absolute;
+          top: 9px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+    tr:last-child {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+  }
+  .switchWrap {display: inline-block;}
+  .otcAccount-body {
+    // border-top-width: 10px;
+    // border-top-style: solid;
+  }
+  .otcAccount-title {
+    height: 50px;
+    // border-bottom-style: solid;
+    // border-bottom-width: 1px;
+    padding: 0 0.15rem;
+    vertical-align: middle;
+    .text {
+      float: left;
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 55px;
+      font-size: 14px;
+    }
+    .hide {
+      float: right;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 15px;
+      line-height: 55px;
+      .hodetext {
+        margin-left: 8px;
+        font-size: 12px;
+      }
+    }
+    .find {
+      float: left;
+      vertical-align: middle;
+      display: inline-block;
+      .findClass {
+        margin-top: 13px;
+      }
+    }
+  }
+  .otcAccount-center {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar {
+      padding: 0!important;
+    }
+  }
+  .transfer-box {
+    padding-top: 10px;
+    padding-bottom: 16px;
+    .transfer-content {
+      width: 400px;
+      height: 70px;
+      margin-bottom: 23px;
+      user-select: none;
+      li {
+        float: left;
+      }
+      .transfer-page {
+        width: 160px;
+        padding-left: 15px;
+        height: 70px;
+      }
+      .transfer-page-side {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 13px;
+      }
+      .transfer-page-name {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      .transfer-icon {
+        width: 50px;
+        height: 70px;
+        line-height: 85px;
+        text-align: center;
+        .icon { cursor: pointer }
+      }
+    }
+  }
+  .otcAccount-header {
+    background-position: right bottom !important;
+    background-repeat: no-repeat !important;
+  }
+}
+// 国际版
+.Int {
+  .page-otcAccount {
+    .otcAccount-header {
+      width: 940px;
+      margin: 0 auto;
+      height: 140px;
+      padding: 20px 0;
+    }
+    .otcAccount-title {
+      padding: 0;
+    }
+    .otcAccount-body {
+      border: none;
+      width: 940px;
+      margin: 0 auto;
+      padding: 40px 0 0 0;
+      .otcAccount-center {
+        padding: 0;
+      }
+    }
+  }
+}

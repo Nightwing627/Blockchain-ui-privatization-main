@@ -1,0 +1,230 @@
+.page-otcTrade {
+  // width: 1180px;
+  // min-height: 800px;
+  // padding-bottom: 80px;
+  // margin: 30px auto 0 auto;
+  padding-bottom 0.7rem
+
+  .otcTrade-otcPayIcon {
+    cursor auto
+    margin-top -3px
+    margin-left 10px
+  }
+
+  .otcTrade-header {
+    border-top-width 1px
+    border-top-style solid
+    box-sizing border-box
+    padding-bottom 0.1rem
+
+    .otcTrade-box {
+      padding 0.1rem 0.15rem
+    }
+
+    // 头像
+    .otcTrade-page {
+      display inline-block
+      width 0.36rem
+      height 0.36rem
+      border-radius 50%
+      text-align center
+      line-height 0.36rem
+      font-size 22px
+      position relative
+      // float: left;
+      vertical-align middle
+      cursor pointer
+
+      div {
+        width 0.36rem
+        height 0.36rem
+        border-radius 50%
+        overflow hidden
+      }
+
+      img {
+        width 0.36rem
+        height 0.36rem
+        display block
+      }
+
+      .lineIcon {
+        position absolute
+        width 8px
+        height 8px
+        right 0px
+        bottom 0px
+        border-radius 50%
+        border-style solid
+        border-width 2px
+      }
+    }
+
+    // 名称/在线状态
+    .otcTrade-user {
+      display inline-block
+      // float: left;
+      margin-left 0.1rem
+      vertical-align middle
+
+      .otcTrade-userName {
+        font-size 14px
+        // height: 20px;
+        max-width 2.8rem
+        word-wrap break-word
+        line-height 0.16rem
+      }
+
+      .otcTrade-userStatus {
+        margin-top 4px
+        font-size 12px
+      }
+    }
+
+    .otcTrade-header-message {
+      padding 0 0.1rem
+    }
+
+    .otcTrade-header-even {
+      width 100%
+      display inline-block
+      vertical-align middle
+      padding 0.05rem
+      box-sizing border-box
+      display flex
+      justify-content space-between
+
+      .otcTrade-header-even-value {
+        font-size 12px
+        text-align right
+        // float: right
+      }
+
+      .otcTrade-header-even-key {
+        font-size 12px
+        width 60%
+        // float: left;
+      }
+    }
+
+    .otcTrade-header-BTC {
+      width 100%
+    }
+  }
+
+  .otcTrade-message {
+    padding 0 0.15rem
+
+    .otcTrade-message-title {
+      font-size 0.16rem
+      margin 0.2rem 0 0.1rem 0
+    }
+
+    .otcTrade-message-box {
+      display flex
+      border-bottom-width 1px
+      border-bottom-style solid
+      justify-content space-between
+      padding-bottom 0.2rem
+    }
+
+    .otcTrade-message-keys {
+      // float: left;
+      li {
+        line-height 20px
+        margin-top 10px
+        font-size 12px
+        height 20px
+      }
+    }
+
+    .otcTrade-message-values {
+      // float: left;
+      flex 1
+
+      // margin-left: 40px;
+      li {
+        line-height 20px
+        text-align end
+        font-size 14px
+        margin-top 10px
+
+        .description {
+          display inline-block
+          max-width 2rem
+          word-wrap break-word
+        }
+      }
+    }
+  }
+
+  .closeTrade-dialog {
+    font-size 14px
+    padding-bottom 10px
+  }
+
+  .otcTrade-options-trade {
+    // padding-top: 42px;
+    // padding-left: 60px;
+    padding 0.2rem 0.15rem
+
+    .options-trade-title {
+      font-size 0.16rem
+    }
+
+    .buttonTimer {
+      display inline-block
+      margin-left 20px
+      font-size 14px
+    }
+
+    .options-trade-form {
+      margin-top 0.2rem
+
+      .leftInp, .rightInp {
+        width 100%
+        // float: left;
+      }
+
+      .tradeIcon {
+        height 46px
+        line-height 60px
+        text-align center
+        width 100%
+        // float: left;
+      }
+    }
+
+    .options-trade-pass {
+      // width: 240px;
+      margin-top 0.2rem
+    }
+  }
+
+  .otcTrade-options-myself {
+    padding 0.2rem 0.15rem
+
+    .myself-market {
+      position fixed
+      bottom 0
+      width 100%
+      display flex
+      left 0
+
+      div {
+        width 50%
+        text-align center
+        line-height 0.44rem
+      }
+    }
+
+    .myself-tip {
+      font-size 14px
+      // margin-top: 38px;
+    }
+
+    .textButton {
+      font-size 14px
+    }
+  }
+}

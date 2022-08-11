@@ -1,0 +1,291 @@
+.mining {
+  .table-box {
+    padding: 0 0.15rem
+  }
+  // margin-top: -60px;
+  .top-content {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .warp {
+    // width: 1180px;
+    margin: 0 auto;
+    .common-table {
+      background: none;
+    }
+  }
+  .page-title {
+    // margin-top: 70px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .f_r {
+    float: right;
+  }
+  .my-minning-pct {
+    padding: 0.2rem 0.15rem 0 0.15rem;
+    .tit {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .num {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    .pct-bar {
+      margin: 10px 0;
+      overflow: hidden;
+      height: 0.08rem;
+      .pct {
+        height: 0.08rem;
+        width: 50%;
+      }
+    }
+  }
+  .wk-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.2rem 0.15rem;
+    .item-box {
+      width: 50%;
+      &:nth-of-type(even) {
+        text-align: right;
+      }
+      &:nth-child(n+3) {
+        margin-top: 0.2rem;
+      }
+      .box-bar {
+        // border-left-width: 1px;
+        // border-left-style: solid;
+        // padding-left: 20px;
+      }
+      .name {
+        font-size: 0.14rem;
+        line-height: 16px;
+      }
+      .txt {
+        font-size: 0.12rem;
+        line-height: 12px;
+        margin-top: 0.08rem;
+      }
+      .padding {
+        height: 44px;
+      }
+    }
+  }
+  .my-harvest {
+    // border-radius: 2px;
+    // margin-top: 44px;
+    display: inline-block;
+    width:100%;
+    .mian-nav{
+      display: block;
+      height:48px;
+      padding-left: 20px;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+    .tit {
+      font-size: 16px;
+      line-height: 22px;
+      // padding: 20px 0 0 20px;
+      padding: 0.1rem 0.15rem;
+    }
+    .div-earnings{
+      // display: inline-block;
+      // width: 100%;
+      padding: 0.15rem;
+      display: flex;
+      justify-content: space-between;
+      // padding-bottom: 20px;
+    }
+    .sy-num {
+      // margin-top: 16px;
+      // float: left;
+      span {
+        font-size: 0.16rem;
+        line-height: 20px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      b {
+        font-size: 0.14rem;
+      }
+      p {
+        font-size: 12px;
+        // margin-top: 18px;
+      }
+    }
+    .tt-num {
+      // float: right;
+      // margin-top: 15px;
+      font-size: 14px;
+      line-height: 14px;
+
+      .tt-i {
+        float: left;
+        // padding: 0 40px;
+        // line-height: 30px;
+        &:last-child {
+          // border-left-width: 1px;
+          // border-left-style: solid;
+
+        }
+        .n {
+          line-height: 20px;
+        }
+        .t {
+          font-size: 12px;
+          margin-right: 5px;
+
+        }
+      }
+    }
+    .center{
+      // width: 940px;
+      padding: 0 0.15rem;
+      position: relative;
+      .center-main{
+        display: flex;
+        margin: 0.2rem 0;
+        div:nth-of-type(1){
+          margin-right: 0.3rem;
+        }
+        div{
+          p:nth-of-type(2){
+            font-size: 12px;
+            line-height: 22px;
+          }
+          p:nth-of-type(1){
+            font-size: 16px;
+          }
+        }
+      }
+      .invitation-way{
+        width: 100%;
+        margin-top: 0;
+        p:nth-of-type(1){
+          font-size:12px;
+          margin-bottom:10px;
+        }
+        .invitation-ways{
+          // display: flex;
+          margin-bottom: 20px;
+          div{
+            display: flex;
+            align-items: center;
+            line-height: 0.4rem;
+            height:0.4rem;
+            svg:nth-of-type(1){
+              margin:0 10px 0 16px;
+            }
+            svg:nth-of-type(2){
+              margin:0 18px 0 12px;
+              cursor:pointer;
+            }
+          }
+          div:nth-of-type(1){
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 0.1rem;
+            // margin-right:10px;
+          }
+          .message-text {
+            max-width: 2rem;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+          }
+          div:nth-of-type(2){
+            // width 480px;
+            height:0.4rem;
+            line-height: 0.4rem;
+            font-size: 12px;
+            z-index: 2;
+            svg:nth-of-type(3){
+              cursor:pointer;
+            }
+            .inviteQECode-show{
+              position: relative;
+              svg{
+                margin:0;
+              }
+              .center-img{
+                display: none;
+                position:fixed;
+                top: 20%;
+                right: 10%;
+                width: 80%;
+                // height: 80%;
+                margin-right 0;
+                z-index:2;
+                img{
+                  width: 100%;
+                  // height:80px;
+                  margin:5px;
+                }
+              }
+            }
+            .inviteQECode-show:hover{
+              .center-img {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .center-bg{
+        position: absolute;
+        right:0;
+        bottom: 0;
+      }
+    }
+  }
+  .mining-data {
+    // margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+  }
+  .mining-tit {
+    height: 0.4rem;
+    line-height: 0.38rem;
+    padding: 0 0.15rem;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    overflow-x: scroll;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    ul {
+      display: flex;
+    }
+    li {
+      white-space: nowrap;
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 0.2rem;
+      height: 0.38rem;
+      user-select: none;
+      cursor: pointer;
+      &.selected {
+        border-bottom-width: 0.01rem;
+        border-bottom-style: solid;
+      }
+    }
+  }
+  .invite-bonus{
+    // margin-top: 20px;
+    .main-table{
+      width:100%;
+      .main-table-title{
+        font-size: 14px;
+        padding:0.15rem 0 0.15rem 0.15rem;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+      }
+    }
+  }
+}

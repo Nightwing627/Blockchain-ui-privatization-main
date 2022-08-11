@@ -1,0 +1,217 @@
+.market-component {
+  .market-tab {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 6px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    .marketUl {
+      text-align: center;
+      li {
+        float: left;
+        height: 38px;
+        line-height: 40px;
+        cursor: pointer;
+        user-select: none;
+        margin: 0 16px;
+        padding: 0 4px;
+        &.selected {
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+.market-table {
+  min-width:1100px;
+  width: 100%;
+  font-size: 12px;
+  .home-loading {
+    height: 300px;
+    position: relative;
+    .loading-page {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0)
+    }
+  }
+  .home-nodata {
+    height: 300px;
+    position: relative;
+    padding: 80px 0 80px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    p {
+      margin-top: 5px;
+    }
+    .icon {
+      font-size: 36px;
+    }
+  }
+  
+
+
+  .table-thead {
+    user-select: none;
+    width: 100%;
+    font-size: 12px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 30px;
+    padding: 0 26px;
+    box-sizing: border-box;
+    .sortable {
+      cursor: pointer
+    }
+    li {
+      height: 30px;
+      line-height: 30px;
+      text-align: right;
+      float: left
+      &:nth-child(1) { width: 12% }
+      &:nth-child(2) { width: 15% }
+      &:nth-child(3) { width: 13% }
+      &:nth-child(4) { width: 15% }
+      &:nth-child(5) { width: 15% }
+      &:nth-child(6) { width: 15% }
+      &:nth-child(7) { width: 15% }
+    }
+    li:first-child {
+      text-align: left;
+    }
+  }
+  .table-tbody-box {
+    transition: all 0.5s
+  }
+  .table-tbody {
+    padding: 0 12px;
+    .table-tbody-title {
+      height: 33px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      line-height: 33px;
+    }
+    .table-tbody-list {
+      .table-tbody-li {
+        cursor: pointer;
+        padding-right: 16px;
+        height: 57px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        overflow: hidden;
+        .even {
+          line-height: 57px;
+          float: left;
+          text-align: right;
+          &:nth-child(1) { width: 12% }
+          &:nth-child(2) { width: 15% }
+          &:nth-child(3) { width: 13% }
+          &:nth-child(4) { width: 15% }
+          &:nth-child(5) { width: 15% }
+          &:nth-child(6) { width: 15% }
+          &:nth-child(7) { width: 15% }
+          .rose-label {
+            display: inline-block;
+            width: 70px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            padding: 0;
+          }
+          .evenSymbol {
+            margin-left: 22px;
+            font-weight: 700!important;
+            cursor: pointer;
+            font-size: 12px;
+            position relative
+            .coin-label {
+              position absolute
+              right 0
+              transform translateX(100%)
+              top 0
+              white-space nowrap;
+              position:absolute;
+              right:-5px;
+              transform:translateX(100%);
+              top:-4px;
+              white-space:nowrap;
+              display:inline-block;
+              font-size:12px;
+              font-weight:400;
+              padding:0px 4px;
+              border-radius:2px;
+              line-height:17px;
+              overflow: hidden;
+              .coin-label {
+                position: relative;
+                z-index: 1;
+                margin: 0;
+                padding: 0;
+              }
+              .coin-bg {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0.2;
+              }
+            }
+          }
+          .marketIcon {
+            cursor: pointer
+            position: absolute;
+          }
+        }
+        .newPrice {
+          line-height: auto !important;
+          padding-top: 14px;
+          box-sizing: border-box;
+          p {
+            line-height: 15px;
+          }
+          .price {
+            font-size: 14px;
+          }
+        }
+        .even:first-child {
+          text-align: left;
+          position: relative
+        }
+      }
+    }
+  }
+}
+.market-sub-tab {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 6px;
+  .market-tab-item {
+    display: inline-block;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+.page-content-chain {
+  .market-table {
+    .table-tbody-box {
+      min-height: 677px;
+    }
+  }
+}

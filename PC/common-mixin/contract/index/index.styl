@@ -1,0 +1,49 @@
+layoutHeight = 542px
+mediaWidth = 1820px
+
+.contract-content {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    min-width: 1280px;
+    width: 100%;
+    box-sizing: border-box;
+  .layout-block-Klinw {
+    position: relative;
+    padding-right: 650px;
+    height: layoutHeight;
+  }
+  .layout-block-depth {
+    position: absolute;
+    top: 5px;
+    right: 330px;
+    width: 320px;
+    float: left;
+    overflow: hidden;
+    height: layoutHeight;
+  }
+  .layout-block-trade {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 320px;
+    float: right;
+    height: calc(100% - 10px);
+  }
+  .layout-block-order {
+    padding-right: 325px;
+    margin-top: 5px;
+  }
+  // 
+  @media screen and (min-width: mediaWidth){
+    .layout-block-order {
+      padding-right: 650px;
+    }
+    .layout-block-depth {
+      height: 900px;
+    }
+  }
+}
+
+  
+  

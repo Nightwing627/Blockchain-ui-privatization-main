@@ -1,0 +1,157 @@
+.page-leverafeToLoan {
+  .addressBox-page-icon {
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      .addressBox-page-market {
+        display: block;
+      }
+    }
+    .addressBox-page-market {
+      display: none;
+      position: absolute;
+      top: 28px;
+      width: 340px;
+      padding: 20px;
+      right: 0;
+      box-sizing: border-box;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      z-index: 4
+    }
+  }
+  .withdraw-header {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.15rem;
+    font-size: 0.14rem;
+  }
+  .goAddress {
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer
+  }
+  .withdraw-details {
+    padding: 0.15rem;
+    .coinType {
+      height: 25px;
+      margin-top: 0.18rem;
+      .even {
+        float: left;
+        line-height: 25px;
+        margin-right: 28px;
+        .coin {
+          margin-left: 8px;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+    }
+    .coinDeat {
+      margin-top: 0.2rem;
+      li {
+        // width: 380px;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding: 0 12px;
+        margin-bottom: 2px;
+        box-sizing: border-box;
+        .key {
+          font-size: 12px;
+        }
+        .value {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+        .tolanIcon {
+          margin-left: 6px;
+          cursor: pointer;
+          position: relative;
+          display: inline-block;
+          float: right;
+          .iconMark {
+            display: none;
+            position: absolute;
+            -webkit-box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+            box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+            width: 300px;
+            bottom: 30px;
+            line-height: 22px;
+            right: 0;
+            z-index: 3;
+            padding: 10px 24px;
+            font-size: 12px;
+            box-sizing: border-box;
+          }
+          &:hover {
+            .iconMark {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .symbol {
+      display: flex;
+      justify-content: space-between;
+      .coin {
+        font-size: 0.16rem;
+        line-height: 0.32rem;
+      }
+      .link {
+        font-size: 0.12rem;
+        line-height: 0.32rem;
+      }
+    }
+    .numberList {
+      margin: 0.1rem 0;
+      font-size: 0.12rem;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        // float: left;
+      }
+      li {
+        margin-bottom: 4px
+      }
+      .numberList-key {
+        line-height: 27px;
+      }
+      .numberList-value {
+        text-align: right;
+        line-height: 25px;
+        margin-left: 25px;
+        .text {
+          margin-right: 4px;
+          vertical-align: middle
+        }
+        .even-button {
+          vertical-align: middle
+        }
+      }
+      .numberList-last {
+        margin-left: 64px;
+      }
+    }
+    .ServiceSpk {
+      font-size: 12px;
+      line-height: 30px;
+      padding-right: 5px;
+    }
+    .details-warking {
+      margin-top: 0.12rem;
+      font-size: 0.12rem;
+    }
+  }
+  .withdraw-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0!important;
+    }
+  }
+}

@@ -1,0 +1,183 @@
+.market-fade-enter-active {
+  transition: all 0.4s ease;
+}
+
+.market-fade-leave-active {
+  transition: all 0.4s ease;
+}
+
+.market-fade-enter, .market-fade-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.page-otcDetailOrder {
+  .input-line-warning {
+    right: 0
+  }
+  position: relative;
+  box-sizing: border-box;
+  .otcDetailOrder-options {
+    padding: 0 0.15rem;
+    // padding: 40px 60px 10px 60px;
+    .otcDetailOrder-options-line {
+      height: 1px;
+      margin: 0.2rem 0;
+    }
+  }
+  .otcDetailOrder-buttons {
+    margin-top: 0.4rem;
+    .textButtonClass {
+      font-size: 14px;
+      // margin-left: 10px;
+    }
+  }
+  .goPayDialog, .releaseDialog, .appealDialog {
+    .text { font-size: 12px;}
+  }
+  .maxEvm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    padding: 0.1rem;
+    border-radius: 2px;
+    img {
+      min-width: 2.5rem;
+      max-width: 3.3rem;
+      min-height: 3rem;
+      max-height: 5rem;
+    }
+  }
+  .maxEvmAll {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+  }
+  // 确认付款弹窗
+  .goPayDialog {
+    word-break: break-word;
+    padding-bottom: 10px;
+    .list {
+      margin-top: 20px;
+      position: relative;
+      .payEvm {
+        width: 140px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer
+      }
+      li {
+        box-sizing: border-box;
+        min-height: 70px;
+        margin-bottom: 1px;
+        padding: 16px 20px
+        font-size: 12px;
+        // max-width: 1.2rem;
+        // width:
+        .haveEvm {
+          max-width: 2rem;
+        }
+        .key {
+          max-width: 1.2rem;
+        }
+        .value {
+
+          font-size: 14px;
+          margin-top: 8px;
+          .payType1 {
+            max-width: 1.2rem;
+            display: inline-block;
+            word-wrap: break-word;
+          }
+          .payType2 {
+            display: inline-block;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+  }
+  // 确认收款并放币
+  .releaseDialog{
+    .passValueText {
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+      .common-checkout {
+        vertical-align: middle;
+      }
+      .passValueText-text {
+        vertical-align: middle;
+      }
+    }
+  }
+  .connection-dialog{
+    .towMin{
+      padding-top 10px
+      padding-bottom 14px
+    }
+  }
+
+  .connection-list{
+    text-align: left;
+    .connection-li{
+      // width 400px
+      height 70px
+      margin-bottom 1px
+    }
+    .connection-title{
+      letter-spacing: 0;
+      line-height: 16px;
+      padding-left 20px;
+      padding-top 17px;
+    }
+    .connection-desc{
+      margin-top:7px;
+      font-size: 16px;
+      letter-spacing: 0
+      padding-left 20px;
+    }
+  }
+  // 申诉
+  .appealDialog {
+  }
+  // 取消订单
+  .cancelOrderDialog {
+    li {
+      font-size: 14px;
+      margin-bottom: 2px;
+      line-height: 22px;
+    }
+    .cancelOrderDialog-check {
+      margin-top: 18px;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+      .common-checkout {
+        vertical-align: middle;
+      }
+      .cancelOrderDialog-check-text {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  // 取消申诉
+  .cancelAppealDialog {
+    font-size: 14px;
+    // padding-bottom: 10px;
+    line-height: 0.2rem;
+  }
+}

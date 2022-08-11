@@ -1,0 +1,144 @@
+ .order-list-box {
+  margin-top: 1px;
+  .order-conent {
+    padding: 0 0.15rem 0.5rem;
+  }
+  .handle-btn {
+    text-align: right;
+  }
+  .form-info {
+    margin-bottom: 20px;
+    .info-item {
+      height: 50px;
+      padding: 10px 20px;
+      margin-bottom: 1px;
+      .radio {
+        line-height: 50px;
+        span {
+          margin-right: 36px;
+          cursor: pointer;
+        }
+      }
+      .text1 {
+        font-size: 12px;
+        margin-top: 6px;
+        line-height: 22px;
+      }
+    }
+  }
+  .inline-input {
+    padding: 0 10px;
+    .input-line-slot {
+      line-height: 26px;
+    }
+  }
+  .table-body {
+    min-height: 250px;
+  }
+}
+.trade-content {
+  .table-body .notShowe {
+    display: none;
+  }
+  .table-body .marketPriceOrder {
+    display: none;
+  }
+  .left-text {
+    text-align: left;
+  }
+}
+.tab-content {
+  height: 0.4rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 0 0.15rem;
+  box-sizing: border-box;
+  display: flex;
+}
+.tab-box {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  display: flex;
+  .tab-item {
+    white-space: nowrap;
+    font-size: 14px;
+    margin-right: 0.25rem;
+    display: inline-block;
+    cursor: pointer;
+    height: 37px;
+    &.selected {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+    }
+  }
+}
+.order-list {
+  .common-table {
+    min-width: 1000px;
+    .hover {
+      cursor: pointer;
+      .hover_show {
+        display: none;
+      }
+      &:hover {
+        .hover_show {
+          display: block;
+        }
+        .hover_hide {
+          display: none;
+        }
+      }
+    }
+    .ctimeStr {
+      width: 100px;
+      display: block;
+    }
+  }
+}
+.opera {
+  div {
+    padding-right: 10px;
+  }
+}
+.level-l-box {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  .level-list {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    li {
+      text-align: center;
+      height: 0.58rem;
+      line-height: 0.58rem;
+      border-bottom-width: 1px;
+      border-bottom-style: solid
+      border-color:#E2E9EF;
+    }
+    .cancel-change-lever {
+      height: 0.58rem;
+      line-height: 0.58rem;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+}
+.lever-fade-enter-active {
+  transition: all 0.4s ease;
+}
+
+.lever-fade-leave-active {
+  transition: all 0.4s ease;
+}
+
+.lever-fade-enter, .lever-fade-leave-to, {
+  transform: translateY(50%);
+  opacity: 0;
+}

@@ -1,0 +1,52 @@
+.inter-recommend.recommend-biki-contianer {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .recommend-ul {
+      display: inline-block;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 10px
+    }
+    .recommend-even {
+      width: 290px;
+      padding: 28px 20px;
+      box-sizing: border-box;
+      float: left;
+      height: 145px;
+      position: relative;
+      cursor: pointer;
+      .bl {
+        height:105px;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        top: 25px;
+      }
+      &:first-child{
+        .bl {
+          width: 0
+        }
+      }
+    }
+    .symbol {
+      font-size: 14px;
+    }
+    .price {
+      font-size: 22px;
+      margin-top: 23px;
+      span {
+        font-size: 12px;
+        position: relative;
+        top: -4px;
+        left: 10px;
+        color: rgba(91, 95, 106, 1);
+      }
+    }
+    .rose {
+      margin-top: 12px;
+    }
+  }

@@ -1,0 +1,102 @@
+.company-application {
+    // width 1180px
+    // margin 30px auto 0
+    .application-header {
+      // padding-top 60px
+      // padding-left 60px
+      padding: 0.2rem 0.15rem;
+      .title{
+        font-size 0.18rem;
+        margin-bottom 0.2rem;
+      }
+      .desc{
+        font-size 12px
+      }
+    }
+    .service-list{
+      display: flex;
+      flex-wrap: wrap;
+      .li{
+        margin-left: 0.15rem;
+        margin-bottom: 0.2rem;
+        padding 0.25rem 0.15rem;
+        // text-align left
+        display inline-block
+        vertical-align middle;
+        box-sizing: border-box;
+        // margin-right 20px
+        // width 189px
+        // height 193px
+        width: 1.65rem;
+        &:nth-last-of-type(1){
+          margin-right 0
+        }
+      }
+      .li-title{
+        font-size 16px
+        margin-bottom 12px
+      }
+      .li-desc{
+        font-size 12px
+        line-height 18px
+      }
+      .icon{
+        height: 0.6rem;
+        width: 0.5rem;
+        display block
+        line-height 80px
+        text-align center
+        font-size 72px
+        margin-bottom 0.2rem;
+      }
+    }
+    .relieve-btn{
+      // margin-left 10px
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .application-region{
+      margin-top: 0.2rem;
+      padding: 0 0.15rem;
+      // padding-bottom 63px
+      .protocol{
+        display inline-block
+        vertical-align middle
+        margin-left 9px
+      }
+      .common-checkout{
+        vertical-align middle
+      }
+      .app-desc{
+        font-size 12px
+        margin-bottom 15px;
+        display: flex;
+      }
+      .back-btn{
+        padding 10px
+        vertical-align bottom
+        display inline-block
+        &:nth-child(2){
+          margin-left 30px
+        }
+      }
+    }
+    .dialog-text{
+      font-size 14px
+      text-align left
+    }
+    .comBtn{
+      vertical-align middle
+    }
+  }
+  // 国际版
+    .Int {
+      .company-application-page {
+        height: 100%;
+      }
+      .company-application {
+        margin: 0;
+        width: auto;
+        height: 100%;
+      }
+    }

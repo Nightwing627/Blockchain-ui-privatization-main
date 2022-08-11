@@ -1,0 +1,269 @@
+.depath-index-container {
+  .depth {
+    width 320px
+    height 900px
+    float left
+    position relative
+    overflow hidden
+  }
+
+  .block-header {
+    height 39px
+    line-height 38px
+    padding 0 15px
+    font-size 14px
+    border-bottom-width 1px
+    border-bottom-style solid
+  }
+
+  .current-price {
+    height 40px
+    line-height 40px
+    // padding 0 15px
+    font-size 12px
+    position: relative;
+    .price {
+      float left
+      margin-left: 15px;
+      .sy-price {
+        margin-right 5px
+        font-size 14px
+      }
+    }
+    .etfPriceClass {
+      .sy-price, .otc-price {
+        display block;
+        line-height: 16px;
+        font-size: 12px!important;
+      }
+      .sy-price {
+        margin-top: 4px;
+      }
+    }
+    .eftJz {
+      float: left;
+      margin-left: 30px;
+      height: 40px;
+      .eftJz-title, .eftJz-value {
+        line-height: 16px;
+        font-size: 12px!important;
+      }
+      .eftJz-title {
+        margin-top: 4px;
+        .icon {
+          cursor: pointer
+        }
+      }
+      &:hover {
+        &+.market-show {
+          display: block
+        }
+      }
+    }
+    .market-show {
+      display: none;
+      position: absolute;
+      width: 100%;
+      // top: 40px;
+      z-index: 99;
+      line-height: 20px;
+      padding: 15px;
+      box-sizing: border-box;
+      box-shadow: 0 3px 4px 1px rgba(0,0,0,0.28);
+      &:hover {
+        display: block
+      }
+    }
+    .depth-type {
+      float right
+      margin-right: 15px;
+      .num {
+        font-size 12px
+      }
+
+      .switch-type-btn {
+        line-height 15px
+        display inline-block
+        float right
+        margin 13px 0 0 5px
+        border-right none
+
+        .icon-switch {
+          float left
+          width 14px
+          height 14px
+          margin-left 2px
+          text-align center
+          cursor pointer
+
+          .hoverShow {
+            display none
+          }
+
+          &:hover {
+            .hoverHide {
+              display none
+            }
+
+            .hoverShow {
+              display inline-block
+            }
+          }
+        }
+
+        .noclick {
+          cursor auto
+        }
+      }
+    }
+  }
+
+  .switch-btn {
+    float right
+    display: none !important;
+    .dtIcon {
+      font-size 16px
+      margin-left 5px
+      cursor pointer
+      display inline-block
+      height 36px
+      line-height 36px
+      text-align center
+      border-radius 50%
+      width 36px
+    }
+  }
+
+  .h4 {
+    display inlin
+  }
+
+  .title-tab {
+    margin-right 30px
+    display none
+
+    &.title-new-tab {
+      display none
+    }
+  }
+}
+
+// 中国版
+.Chainer {
+  .depath-index-container {
+    @media screen and (max-width: 1820px) {
+      .new-tradb {
+        position absolute
+        top 40px
+        left 0
+        // left: -100%;
+        will-change transform
+
+        &.is-show {
+          display block
+          left 0
+          transform translate(0px, 0px)
+        }
+      }
+
+      .depth {
+        .block-content {
+          position absolute
+          top 40px
+          left 0
+          transform translate(-100%, 0px)
+          // left: -100%;
+          will-change transform
+
+          &.is-show {
+            display block
+            left 0
+            transform translate(0px, 0px)
+          }
+        }
+      }
+    }
+  }
+
+  .trade-shrinks {
+    .depath-index-container {
+      .depth {
+        .h4 {
+          display none
+        }
+
+        .title-tab {
+          padding 0 3px
+          cursor pointer
+          display inline-block
+          margin-right 15px;
+
+          &.title-new-tab {
+            display inline-block
+          }
+
+          &:hover, &.selected {
+            border-bottom-style solid
+            border-bottom-width 2px
+          }
+        }
+
+        .block-content {
+          position absolute
+          top 40px
+          left 0
+          transform translate(-100%, 0px)
+          // left: -100%;
+          transition transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s
+          will-change transform
+
+          &.is-show {
+            display block
+            left 0
+            transform translate(0px, 0px)
+          }
+        }
+      }
+
+      .new-tradb {
+        transform translate(100%, 0px)
+        // left: -100%;
+        transition transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s
+        will-change transform
+
+        &.is-show {
+          display block
+          left 0
+          transform translate(0px, 0px)
+        }
+      }
+
+      .switch-btn {
+        display: none !important;
+        .dtIcon {
+          width 25px;
+          margin-left 0;
+        }
+      }
+    }
+  }
+
+  .lever-depth-block {
+    .depth {
+      height 960px
+    }
+  }
+}
+
+// 国际版
+.Int-trade {
+  .depath-index-container {
+    &.trade-depth-block {
+      height calc(100% - 405px)
+    }
+
+    .depth, .new-tradb {
+      height 100%
+    }
+  }
+}

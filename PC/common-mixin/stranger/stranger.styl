@@ -1,0 +1,182 @@
+.stranger{
+  width: 1180px;
+  min-height: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: grid;
+  .stranger-header{
+    float: left;
+    width: 1060px;
+    padding: 30px 60px;
+    .blackListButton{
+      margin-left: 10px;
+    }
+    .stranger-top{
+      width: 100%;
+      float: left;
+      .user-logo{
+        float: left;
+        width:50px;
+        height:50px;
+        font-size: 22px;
+        position: relative;
+        border-radius: 50%;
+        margin-right: 20px;
+        span{
+          width:50px;
+          height:50px;
+          position:absolute;
+          line-height:50px;
+          text-align: center;
+          z-index:2;
+        }
+        img{
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          z-index:1;
+        }
+        i{
+          width:8px;
+          height:8px;
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 2px;
+          position: absolute;
+          right:0;
+          bottom:0;
+          z-index:2;
+        }
+      }
+      .user-name{
+        float: left;
+        p:nth-of-type(1){
+          font-size: 22px;
+          line-height: 36px;
+          span{
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 15px;
+          }
+        }
+        p:nth-of-type(2){
+          font-size: 12px;
+        }
+      }
+      .certification{
+        margin-top: 13px;
+        li{
+          float: right;
+          font-size: 12px;
+          margin-left: 34px;
+          svg{
+            float: left;
+            margin-right:10px;
+          }
+          span{
+            float:left;
+            line-height: 24px;
+          }
+        }
+        float: right;
+      }
+    }
+    .stranger-bottom{
+      float: left;
+      margin-top: 50px;
+      li{
+        float: left;
+        margin-right: 50px;
+        p:nth-of-type(1){
+          font-size:22px;
+          line-height: 34px;
+        }
+        p:nth-of-type(2){
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .stranger-center{
+    float: left;
+    width: 1180px;
+    margin-top:10px;
+    min-height: 600px;
+    .nav-tab{
+      float: left;
+      margin-bottom: 35px;
+      width: 1020px;
+      padding: 0 80px;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+    .tables{
+      width: 1100px;
+      padding: 0 40px;
+      float: left;
+    }
+  }
+  .dialog-p{
+    font-size: 14px;
+  }
+  .payments-ul{
+    width:100%
+    ul{
+      float: right;
+      li{
+        float: right;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        border-radius: 2px;
+        img{
+          width: 16px;
+          height: 16px;
+          margin: 4px;
+        }
+      }
+    }
+  }
+  .table-head{
+    padding: 0;
+    margin: 0 20px;
+  }
+  .table-body td .icon-btn{
+    margin-left: 0;
+  }
+}
+// 国家版
+.Int {
+  .stranger,
+  .strangerPage {
+    margin: 0;
+    width: auto;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .stranger .stranger-center,
+  .stranger .stranger-header {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding-left: 0;
+    float: none;
+    padding-right: 0;
+  }
+  .strangerbar {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .stranger .stranger-center .nav-tab {
+    padding: 0;
+    width: 100%;
+  }
+  .stranger .stranger-center .tables {
+    padding: 0;
+  }
+  .stranger .table-head {
+    margin: 0;
+    padding-right: 10px;
+  }
+}

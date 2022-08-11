@@ -1,0 +1,212 @@
+.order-list-box {
+  .common-position-table {
+    .positionLis-table{
+      table {
+        width: 100%;
+      }
+      .thead {
+        line-height: 30px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        text-align: center;
+        th {
+          padding-left: 10px;
+          &:last-child {
+            padding-right: 10px;
+          }
+        }
+      }
+      .tbody {
+        tr {
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+        }
+        td {
+          text-align: center;
+          padding: 5px 0;
+          line-height: 16px;
+          vertical-align: middle;
+          position: relative;
+          padding-left: 10px;
+          min-width: 80px;
+          .icon-s {
+            vertical-align: middle;
+            margin-right: 5px;
+            cursor: pointer;
+          }
+          &:first-child {
+            padding-left: 20px;
+            text-align: left;
+          }
+          &:last-child {
+            padding-right: 10px;
+            min-width 50px;
+          }
+        }
+        .sideBg {
+          position: absolute;
+          width: 5px;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+        .edit-stop-order {
+          cursor: pointer;
+        }
+      }
+      .close-position {
+        width: 200px;
+        div {
+         min-width 135px; 
+        }
+        input {
+          height: 26px;
+          line-height: 26px;
+          border-width: 1px;
+          border-style: solid;
+          box-sizing: border-box;
+          width: 45%;
+          margin-right: 5px;
+          padding: 0 5px;
+          font-size: 12px;
+        }
+        .common-button {
+          margin-right: 5px;
+          font-size: 12px;
+          line-height: 24px !important;
+        }
+        .close-order-btn {
+          display: inline-block;
+          width: 45%;
+          line-height: 24px;
+          text-align: center;
+
+        }
+      }
+     
+    }
+  }
+  .not-data {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 12px;
+    .icon {
+      font-size: 36px;
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
+  .thead-box {
+    height: 30px;
+    line-height: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: rgba(228,228,228,0.25) !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 0;
+    .cell {
+      display: inline-block;
+      padding-left: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 12px;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      width: 9%;
+      &:first-child {
+        padding-left: 20px;
+        text-align: left;
+      }
+      &:last-child {
+        padding-right: 10px;
+      }
+    }
+  }
+  .positionLis-table-box {
+    height: 220px;
+    font-size: 12px;
+  }
+  .columns-item {
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    position: relative;
+    cursor: pointer;
+    .tip-text {
+      display: none;
+      width: 240px;
+      padding: 20px;
+      position: absolute;
+      left: 0px;
+      top: 20px;
+      z-index: 10;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+      line-height: 1.5;
+      border-width: 1px;
+      border-style: solid;
+      white-space: initial;
+      text-align: left;
+    }
+    .tip-text6,
+    .tip-text7
+    .tip-text8
+    .tip-text9
+    .tip-text10  {
+      left: auto;
+      right: 0;
+    }
+    
+    &:hover {
+      .tip-text {
+        display: block
+      }
+    }
+  }
+  .amountDialog-box {
+    .copywriter {
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+    .amount-item {
+      padding: 18px 20px;
+      margin-bottom: 1px;
+      p {
+        line-height: 18px;
+        &.tit {
+          font-size: 12px;
+        }
+        .f_r {
+          float: right;
+        }
+      }
+      .profit {
+        font-size: 16px;
+      }
+    }
+  }
+  .position-profit {
+    user-select: none;
+    cursor: pointer;
+    span {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+    .h-s {
+      display: none;
+    }
+    &:hover {
+      .h-s {
+        display: inline;
+      }
+      .h-i {
+        display: none;
+      }
+    }
+    
+  }
+}
+ 

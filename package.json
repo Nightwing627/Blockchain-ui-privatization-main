@@ -1,0 +1,88 @@
+{
+  "name": "@knoxexchange/blockchain-ui-privatization",
+  "version": "1.8.0",
+  "description": "knoxEX",
+  "author": "samuel safahi",
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "autod": "autod",
+    "ci": "npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "publish-package": "node ./npmPublish.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/helper-module-imports": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babelify": "^10.0.0",
+    "bowser": "^2.7.0",
+    "browserify": "^16.5.0",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "graphql-request": "^1.8.2",
+    "lodash": "^4.17.15",
+    "nodemailer": "^6.4.2",
+    "rimraf": "^3.0.0",
+    "v-click-outside-x": "^4.0.19",
+    "vue-router": "^3.1.6",
+    "vue-script2": "^2.1.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+    "@vue/cli-plugin-eslint": "^3.2.1",
+    "@vue/cli-plugin-router": "^4.3.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/eslint-config-airbnb": "^5.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.7.2",
+    "eslint-config-egg": "^8.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "lint-staged": "^7.2.2",
+    "webpack-cli": "^3.3.11"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "license": "BSL-1.0",
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "Knox",
+    "Safahi"
+  ]
+}

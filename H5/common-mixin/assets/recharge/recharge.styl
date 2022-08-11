@@ -1,0 +1,187 @@
+.page-recharge {
+  .choose-rechange-address{
+    margin-top:0.14rem;
+  }
+  .alertTitle {
+    margin-bottom: 15px;
+  }
+  .alertText {
+    width: 285px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 20px;
+  }
+  .recharge-header {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.15rem;
+    font-size: 0.14rem;
+  }
+  .recharge-details {
+    padding: 0.15rem;
+    .symbol {
+      display: flex;
+      justify-content: space-between;
+      .coin {
+        font-size: 0.16rem;
+        line-height: 0.32rem;
+      }
+      .link {
+        font-size: 0.12rem;
+        line-height: 0.32rem;
+      }
+    }
+    .numberList {
+      margin-top: 22px;
+      font-size: 12px;
+      ul {
+        float: left;
+      }
+      li {
+        margin-bottom: 4px
+      }
+      .numberList-key {
+        line-height: 20px;
+        li { text-align: end; }
+      }
+      .numberList-value {
+        line-height: 20px;
+        margin-left: 20px;
+      }
+      .numberList-last {
+        margin-left: 64px;
+      }
+    }
+    .details-warking {
+      margin-top: 37px;
+      font-size: 12px;
+      .wicon {
+        float: left
+      }
+      .text {
+        float: left;
+        max-width: 400px;
+        display: inline-block;
+        line-height: 18px;
+      }
+    }
+    .details-title {
+      font-size: 0.14rem;
+      line-height: 0.2rem;
+      margin-top: 0.14rem;
+    }
+    .address {
+      width: 100%;
+      padding: 0.12rem 10px;
+      box-sizing: border-box;
+      margin-top: 0.2rem;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      input {
+        position: absolute;
+        opacity: 0;
+        left: -1000px;
+        top: -1000px;
+      }
+      .text {
+        font-size: 0.14rem;
+        line-height: 0.16rem;
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+      .copy {
+        cursor: pointer
+      }
+    }
+    .addressPage {
+      &.margin-one{
+        margin-top:1px;
+      }
+      width: 100%;
+      padding: 0.12rem 10px;
+      box-sizing: border-box;
+      margin-top: 0.1rem;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+      .iconPage {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        &:hover {
+          .iconPage-market {
+            display: block;
+          }
+        }
+        .iconPage-market {
+          display: none;
+          position: absolute;
+          top: 32px;
+          width: 340px;
+          right: -10px;
+          padding: 20px;
+          box-sizing: border-box;
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        left: -1000px;
+        top: -1000px;
+      }
+      .page {
+        font-size: 12px;
+      }
+      .text {
+        font-size: 0.14rem;
+        line-height: 0.16rem;
+        margin-left: 0.1rem;
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+      .copy {
+        margin-left: 9px;
+        cursor: pointer
+      }
+    }
+    .addressQRCode {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-top: 0.16rem;
+      img {
+        width: 100%;
+        height: 100%;
+        display block;
+      }
+    }
+  }
+  .recharge-table {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .table-head, .table-body-bar, .pagination{
+      padding: 0!important;
+    }
+  }
+  .warning {
+    margin-top: 0.16rem;
+    .warning-title {
+      font-size: 0.12rem;
+      line-height: 0.2rem;
+    }
+    .warning-list {
+      margin-top: 0.1rem;
+      font-size: 0.12rem;
+      line-height: 0.22rem;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.bitWind-recommend.recommend-bitwind-contianer {
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    background: #001624;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    .ulCenter {
+      margin-left: 50%;
+      transform: translateX(-50%)
+    }
+    .recommend-even {
+      width: 200px;
+      padding: 25px 0;
+      box-sizing: border-box;
+      float: left;
+      height: 60px;
+      position: relative;
+      cursor: pointer;
+      .bl {
+        height: 70px;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        top: 25px;
+      }
+      &:first-child{
+        .bl {
+          width: 0
+        }
+      }
+    }
+    .symbol {
+      font-size: 14px;
+      float: left;
+      color: #FFFFFF;
+    }
+    .price {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+    .rose-icon {
+      float: left;
+      margin-left: 5px;
+    }
+    .volume {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    .rose {
+      float: left;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+    .kline {
+      width: 90px;
+      height: 32px;
+      position: absolute;
+      bottom: 36px;
+      right: 20px;
+    }
+  }

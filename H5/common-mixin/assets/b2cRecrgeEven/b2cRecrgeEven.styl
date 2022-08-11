@@ -1,0 +1,81 @@
+.b2cRecrge-even {
+  .even-tolanIcon {
+    // margin-left: 6px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 8px;
+    // float: right;
+    .iconMark {
+      display: none;
+      position: absolute;
+      -webkit-box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.28);
+      box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.28);
+      width: 300px;
+      top: 20px;
+      line-height: 22px;
+      // left: -60px;
+      right: 0;
+      z-index: 3;
+      padding: 10px 24px;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+
+    &:hover {
+      .iconMark {
+        display: block;
+      }
+    }
+  }
+  margin-bottom: 2px;
+  min-height: 16px;
+  padding: 7px 0;
+  font-size: 12px;
+
+  .key {
+    padding: 0 14px 0 10px;
+    width: 50px;
+    display: inline-block;
+  }
+
+  .value {
+    font-size: 14px;
+  }
+
+  .copyTd {
+    padding-left: 8px;
+    text-align: right;
+    overflow: hidden;
+    position: relative;
+    input {
+      position: absolute;
+      left: -1000px;
+      top: -1000px;
+    }
+    .icon {
+      cursor: pointer;
+    }
+
+    .svgs {
+      .info {
+        display: inline-block;
+      }
+
+      .active {
+        display: none;
+      }
+
+      &:hover {
+        .active {
+          display: inline-block;
+        }
+
+        .info {
+          display: none;
+        }
+      }
+    }
+  }
+}
